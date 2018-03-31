@@ -508,8 +508,7 @@ ul{
     animation-duration: 5s;
 }
 
-.my-projects a:hover + .project-bg,
-.my-projects a:focus + .project-bg{
+.my-projects a:hover + .project-bg{
     opacity: 1;
     /* width: 100%; */
     /* height: 100vh; */
