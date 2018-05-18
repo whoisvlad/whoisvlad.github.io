@@ -1,0 +1,97 @@
+/*======================================= Fonts =======================================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700')
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese')
+/* font-family: 'Merriweather', serif; */
+/*======================================= Fonts END =======================================*/
+
+$font-weight: 400
+$font-size: 16px
+$line-height: 1.4
+$font-1: 'Montserrat'
+$font-2: 'Merriweather'
+$color: rgba(0,0,0,0.74)
+$main-bg: #f5f6f8
+$wrapper: 1200px
+$bg-temp: rgba(150,0,0,0.8)
+
+body
+    color: $color
+    font-size: 1.2rem
+    line-height: 1.4
+    min-height: 2000px
+    font-family: $font-1, Arial, sans-serif
+    // background-color: #fff
+    // background: steelblue
+    background: $main-bg
+    position: relative
+    // padding-top: 200px
+
+a
+    transition: all .4s ease;
+    text-decoration: none;
+
+.wrapper
+    position: relative
+    box-sizing: border-box
+    width: 100%
+    // min-width: 1000px
+    max-width: 960px
+    margin: 0 auto
+    padding-right: 10px
+    padding-left: 10px
+    // background: $bg-temp
+    
+h1, h2, h3, h4, h5
+    margin-top: 0
+
+// Main Header
+.main-header
+    position: absolute
+    z-index: 800
+    box-sizing: border-box
+    padding-top: 45px
+    padding-bottom: 45px
+    width: 100%
+    // background: $bg-temp
+    .wrapper, nav, .page-nav
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-right: 10px
+        list-style-type: none
+    .page-nav
+        margin-top: 0
+        margin-bottom: 0
+        a
+            margin-left: 15px
+            margin-right: 15px
+            opacity: 0.5
+            color: #232323
+            font-family: $font-1
+            font-size: 12px
+            text-transform: uppercase
+            letter-spacing: 0.6px
+            &:hover
+                opacity: 1
+    .menu-button
+        margin-left: 20px
+    .wrapper
+        justify-content: space-between
+// Main Header - END
+
+// Index Promo
+.index-promo
+    min-height: 100vh
+    box-sizing: border-box
+    background: url('../img/promo-bg.png') no-repeat bottom
+    background-size: cover
+    .wrapper
+        box-sizing: border-box
+        // padding-top: 140px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        min-height: 100vh
+// Index Promo - END

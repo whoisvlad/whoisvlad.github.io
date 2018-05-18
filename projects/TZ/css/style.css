@@ -1,0 +1,96 @@
+/*======================================= Fonts =======================================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+/* font-family: 'Montserrat', sans-serif; */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese");
+/* font-family: 'Merriweather', serif; */
+/*======================================= Fonts END =======================================*/
+body {
+  color: rgba(0, 0, 0, 0.74);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  min-height: 2000px;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #f5f6f8;
+  position: relative; }
+
+a {
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  text-decoration: none; }
+
+.wrapper {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0; }
+
+.main-header {
+  position: absolute;
+  z-index: 800;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  width: 100%; }
+  .main-header .wrapper, .main-header nav, .main-header .page-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 10px;
+    list-style-type: none; }
+  .main-header .page-nav {
+    margin-top: 0;
+    margin-bottom: 0; }
+    .main-header .page-nav a {
+      margin-left: 15px;
+      margin-right: 15px;
+      opacity: 0.5;
+      color: #232323;
+      font-family: "Montserrat";
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px; }
+      .main-header .page-nav a:hover {
+        opacity: 1; }
+  .main-header .menu-button {
+    margin-left: 20px; }
+  .main-header .wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+.index-promo {
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("../img/promo-bg.png") no-repeat bottom;
+  background-size: cover; }
+  .index-promo .wrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh; }

@@ -1,0 +1,92 @@
+/* ===== fonts ===== */
+
+/* ===== fonts END ===== */
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.4;
+    /* min-height: 2000px; */
+
+    min-width: 1200px;
+
+    background-color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+a{
+    -webkit-transition: .4s;
+         -o-transition: .4s;
+            transition: .4s;
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+
+    content: '';
+}
+.wrapper--global{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.wrapper{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+
+/*new*/
+/* .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
+.visually-hidden:not(:focus):not(:active){
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+}
+
+*::-moz-selection{
+    color: #00cdff;
+    background: black;
+}
+
+*::selection{
+    color: #00cdff;
+    background: black;
+}
+
+
