@@ -2,18 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700')
 /* font-family: 'Montserrat', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese')
-/* font-family: 'Merriweather', serif; */
+@import url(http://allfont.net/allfont.css?fonts=montserrat-hairline)
+/* font-family: 'Montserrat Hairline', Arial, serif; */
 /*======================================= Fonts END =======================================*/
 
 $font-weight: 400
 $font-size: 16px
 $line-height: 1.4
 $font-1: 'Montserrat'
-$font-2: 'Merriweather'
-$color: rgba(0,0,0,0.74)
+$font-2: 'Montserrat Hairline'
+$color: #232323
 $main-bg: #f5f6f8
-$wrapper: 1200px
+$bg-2: #26e6e6
+$wrapper: 960px
 $bg-temp: rgba(150,0,0,0.8)
 
 body
@@ -28,6 +29,21 @@ body
     position: relative
     // padding-top: 200px
 
+// modified
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden
+    position: absolute
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+    height: 1px
+    margin: -1px
+    padding: 0
+    white-space: nowrap
+    border: 0
+    clip-path: inset(100%)
+
 a
     transition: all .4s ease;
     text-decoration: none;
@@ -37,7 +53,7 @@ a
     box-sizing: border-box
     width: 100%
     // min-width: 1000px
-    max-width: 960px
+    max-width: $wrapper
     margin: 0 auto
     padding-right: 10px
     padding-left: 10px
@@ -46,6 +62,50 @@ a
 h1, h2, h3, h4, h5
     margin-top: 0
 
+.button
+    display: inline-block
+    text-transform: uppercase
+    color: #fff
+    background: #000
+    padding: 16px 19px
+    font-size: 12px
+    font-weight: 300
+    line-height: 1
+    text-transform: uppercase
+    letter-spacing: 0.6px
+    border-radius: 2px
+    box-shadow: inset 0 0 0 1px transparent
+    &:hover
+        box-shadow: inset 0 0 0 1px #000
+        background: transparent
+        color: #000
+
+.link
+    display: inline-block
+    font-size: 12px
+    font-weight: 600
+    color: $color
+    text-transform: uppercase
+    padding: 16px 45px
+    border-radius: 25px
+    line-height: 1
+    &:hover
+        background: $bg-2
+    
+
+.heading
+    font-size: 72px;
+    font-weight: 400;
+    font-family: $font-2
+    margin-bottom: 5px
+.heading--upper
+    text-transform: uppercase
+
+.heading--small
+    font-size: 14px
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 0.7px
 // Main Header
 .main-header
     position: absolute
@@ -64,13 +124,29 @@ h1, h2, h3, h4, h5
     .page-nav
         margin-top: 0
         margin-bottom: 0
+        li
+            position: relative
+        li.page-nav__dropdown
+            a
+                &::after
+                    content: ''
+                    position: absolute
+                    right: -11px
+                    top: calc(50% - 3px)
+                    box-sizing: border-box
+                    height: 6px
+                    width: 6px
+                    border-top: 3px solid #232323
+                    border-left: 3px solid transparent
+                    border-right: 3px solid transparent
         a
             margin-left: 15px
             margin-right: 15px
+            position: relative
             opacity: 0.5
             color: #232323
-            font-family: $font-1
             font-size: 12px
+            font-weight: 300
             text-transform: uppercase
             letter-spacing: 0.6px
             &:hover
@@ -79,6 +155,8 @@ h1, h2, h3, h4, h5
         margin-left: 20px
     .wrapper
         justify-content: space-between
+        margin-left: auto
+        margin-right: auto
 // Main Header - END
 
 // Index Promo
@@ -94,4 +172,52 @@ h1, h2, h3, h4, h5
         flex-direction: column
         justify-content: center
         min-height: 100vh
+        p
+            margin-top: 0
+            font-size: 12px
+            font-weight: 300
+            text-transform: uppercase
+            letter-spacing: 0.6px
 // Index Promo - END
+
+// Features
+.features
+    padding-top: 80px
+    padding-bottom: 100px
+.features__list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    list-style-type: none
+    align-items: stretch
+    margin: 0
+    padding: 0
+    text-align: center
+    li
+        width: 29%
+        // padding-top: 80px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        .heading--small
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 50px
+        p
+            opacity: 0.5
+            font-size: 14px
+            font-weight: 300
+            margin-top: 0
+        .feature-icon
+            width: 120px
+            height: 80px
+            margin-bottom: 10px
+            &.mail
+                background: url('../img/icons/mail.png') no-repeat center center
+            &.pen
+                background: url('../img/icons/pen.png') no-repeat center center
+            &.card
+                background: url('../img/icons/card.png') no-repeat center center
+// Features - END
