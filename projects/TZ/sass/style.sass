@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5
         li
             position: relative
         li.page-nav__dropdown
-            a
+            &>a
                 margin-right: 15px
                 padding-right: 11px
                 &::after
@@ -153,11 +153,10 @@ h1, h2, h3, h4, h5
                 &:hover    
                     &:before
                         width: calc(100% - 16px)
-        a
+        .page-nav__item
             margin-left: 10px
             margin-right: 10px
-            padding-left: 5px
-            padding-right: 5px
+            padding: 5px
             position: relative
             opacity: 0.5
             color: #232323
@@ -174,7 +173,7 @@ h1, h2, h3, h4, h5
             &:before
                 content: ''
                 position: absolute
-                bottom: -5px
+                bottom: 0px
                 left: 5px
                 height: 2px
                 // width: 100%
@@ -182,12 +181,97 @@ h1, h2, h3, h4, h5
                 opacity: 0
                 background: #000
                 transition: all 0.4s ease
-    .menu-button
-        margin-left: 20px
     .wrapper
         justify-content: space-between
         margin-left: auto
         margin-right: auto
+
+@keyframes fade-down
+    0%
+        opacity: 0
+        transform: translateX(-10px)
+    100%
+        opacity: 1
+        transform: translateX(0px)
+
+.page-nav__dropdown
+    &:hover
+        .dropdown-menu
+            display: block
+    .dropdown-menu
+        animation-name: fade-down
+        animation-duration: 1s
+        position: absolute
+        top: 100%
+        left: 0
+        list-style-type: none
+        background: #000
+        margin: 0
+        padding: 0px 0px
+        display: flex
+        flex-direction: column
+        align-items: stretch
+        display: none
+        li
+            &:last-child
+                a
+                    margin-bottom: 0
+        a
+            margin: 0
+            display: block
+            color: #fff
+            font-weight: 300
+            font-size: 12px
+            opacity: 0.5
+            line-height: 1
+            padding: 15px 25px
+            white-space: pre
+            // margin-bottom: 15px
+            position: relative
+            z-index: 501
+            &:hover
+                color: #000
+                opacity: 1
+                &:after
+                    width: 100%
+                    z-index: -1
+            &:after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                z-index: -1
+                width: 0%
+                height: 100%
+                background: #fff
+                transition: all 0.4s ease
+
+.menu-button
+        margin-left: 20px
+        width: 20px
+        height: 12px
+        font-size: 0
+        // background: crimson
+        display: none
+        position: absolute
+        z-index: 500
+        right: 5px
+        top: calc(50% - 6px)
+        transition: all 0.4s ease
+.menu-button--close
+    .menu-button__line
+        background: crimson
+.menu-button__line
+    width: 20px
+    height: 2px
+    background: #232323
+    position: absolute
+    &.line-1
+        top: 0px
+    &.line-2
+        top: 5px
+    &.line-3
+        top: 10px
 // Main Header - END
 
 // Index Promo
@@ -317,17 +401,31 @@ h1, h2, h3, h4, h5
         .link
             padding-left: 0
             padding-right: 0
-            padding-top: 0
+            padding-top: 5px
             padding-bottom: 5px
             border-radius: 0
-            border-bottom: 2px solid transparent
             margin-bottom: 0
             margin-top: auto
-            
+            position: relative
             &:hover
-                border-bottom: 2px solid $bg-2
                 background: transparent
-        
+                padding-left: 10px
+                &:before
+                    // height: 100%
+                    width: calc(100% + 20px)
+            &:before
+                content: ''
+                position: absolute
+                bottom: -5px
+                top: -5px
+                left: -5px
+                // right: -5px
+                // height: 0%
+                width: 0%
+                height: calc(100% + 10px)
+                background: #26e6e6
+                transition: all 0.4s ease
+                z-index: -1
 // Features 2 - END
 
 
@@ -413,6 +511,7 @@ h1, h2, h3, h4, h5
 .prices__list
     list-style: none
     display: flex
+    flex-wrap: wrap
     flex-direction: row
     justify-content: space-between
     margin: 0
@@ -423,6 +522,7 @@ h1, h2, h3, h4, h5
         flex-direction: column
         align-items: center
         width: 32%
+        min-width: 250px
         padding-top: 35px
         padding-left: 40px
         padding-right: 40px
@@ -596,6 +696,7 @@ h1, h2, h3, h4, h5
             opacity: 0.2
             color: #fff
             font-size: 12px
+            letter-spacing: 2px
             &:hover
                 opacity: 1
         ul
@@ -604,6 +705,7 @@ h1, h2, h3, h4, h5
             margin-top: 15px
             a
                 display: block
+                letter-spacing: 0px
                 margin-left: 25px
                 font-size: 0
 .footer__copyright__author
