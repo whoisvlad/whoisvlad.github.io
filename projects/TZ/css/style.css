@@ -1,5 +1,5 @@
 /*======================================= Fonts =======================================*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900");
 /* font-family: 'Montserrat', sans-serif; */
 @import url(http://allfont.net/allfont.css?fonts=montserrat-hairline);
 /* font-family: 'Montserrat Hairline', Arial, serif; */
@@ -8,7 +8,6 @@ body {
   color: #232323;
   font-size: 1.2rem;
   line-height: 1.4;
-  padding-bottom: 500px;
   font-family: "Montserrat", Arial, sans-serif;
   background: #f5f6f8;
   position: relative; }
@@ -407,3 +406,152 @@ h1, h2, h3, h4, h5 {
       padding-right: 5px;
       margin-top: 0;
       margin-bottom: 0; }
+
+.page-footer {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid transparent; }
+  .page-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .page-footer .heading-wrapper {
+    max-width: 1000px;
+    z-index: 1; }
+  .page-footer .heading--huge {
+    font-size: 90px;
+    font-weight: 900;
+    text-align: right;
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    color: #000;
+    top: 0px;
+    right: 10px; }
+
+.page-footer__content {
+  position: relative;
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid transparent;
+  margin-top: 100px;
+  padding-top: 250px;
+  padding-bottom: 130px;
+  background: url("../img/footer/footer-bg.png") no-repeat center bottom;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .page-footer__content .logo {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    margin-top: 0;
+    margin-bottom: auto; }
+  .page-footer__content .wrapper {
+    background: #000;
+    color: #fff;
+    position: relative;
+    padding: 50px;
+    margin-top: auto;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.page-footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-footer__nav ul {
+    margin-left: 45px;
+    margin-right: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .page-footer__nav ul li:last-child a {
+      margin-bottom: 0; }
+  .page-footer__nav a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    position: relative; }
+    .page-footer__nav a:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: transparent;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    .page-footer__nav a:hover {
+      opacity: 1; }
+      .page-footer__nav a:hover:after {
+        width: 100%;
+        background: #fff; }
+
+.footer__copyright {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .footer__copyright .footer__social a {
+    opacity: 0.2;
+    color: #fff;
+    font-size: 12px; }
+    .footer__copyright .footer__social a:hover {
+      opacity: 1; }
+  .footer__copyright .footer__social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 15px; }
+    .footer__copyright .footer__social ul a {
+      display: block;
+      margin-left: 25px;
+      font-size: 0; }
+
+.footer__copyright__author p {
+  margin-top: 0;
+  color: #fff;
+  opacity: 0.2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 11px;
+  letter-spacing: 1.5px; }

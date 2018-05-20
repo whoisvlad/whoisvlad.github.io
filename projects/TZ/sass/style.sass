@@ -1,5 +1,5 @@
 /*======================================= Fonts =======================================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900')
 /* font-family: 'Montserrat', sans-serif; */
 
 @import url(http://allfont.net/allfont.css?fonts=montserrat-hairline)
@@ -22,7 +22,7 @@ body
     font-size: 1.2rem
     line-height: 1.4
     // min-height: 2000px
-    padding-bottom: 500px
+    // padding-bottom: 500px
     font-family: $font-1, Arial, sans-serif
     // background-color: #fff
     // background: steelblue
@@ -400,3 +400,138 @@ h1, h2, h3, h4, h5
             margin-top: 0
             margin-bottom: 0
 // Platform Features - END
+
+
+
+
+
+// Page Footer
+.page-footer
+    // background: antiquewhite
+    box-sizing: border-box
+    border-top: 1px solid transparent
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+    .heading-wrapper
+        max-width: 1000px
+        z-index: 1
+    .heading--huge
+        font-size: 90px
+        font-weight: 900
+        text-align: right
+        display: block
+        position: absolute
+        text-transform: uppercase
+        letter-spacing: 2px
+        line-height: 1.25
+        color: #000
+        top: 0px
+        right: 10px
+        
+
+.page-footer__content
+    position: relative
+    z-index: 10
+    box-sizing: border-box
+    border-top: 1px solid transparent
+    margin-top: 100px
+    // padding-top: 600px
+    padding-top: 250px
+    padding-bottom: 130px
+    background: url('../img/footer/footer-bg.png') no-repeat center bottom
+    // background-size: contain
+    // background-size: auto 100%
+    background-size: 100% 100%
+    display: flex
+    align-items: flex-end
+    .logo
+        filter: brightness(0) invert(1)
+        margin-top: 0
+        margin-bottom: auto
+        
+    .wrapper
+        background: #000
+        color: #fff
+        position: relative
+        padding: 50px
+        margin-top: auto
+        margin-bottom: 0
+        display: flex
+
+.page-footer__nav
+    display: flex
+    ul
+        margin-left: 45px
+        margin-right: 45px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        // background: rgba(200,0,0,0.2)
+        li
+            &:last-child
+                a
+                    margin-bottom: 0
+    a
+        display: block
+        text-transform: uppercase
+        // background: crimson
+        font-size: 12px
+        letter-spacing: 2px
+        line-height: 1
+        color: #fff
+        padding-bottom: 5px
+        margin-bottom: 20px
+        opacity: 0.5
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 0%
+            height: 2px
+            background: transparent
+            transition: all 0.4s ease
+        &:hover
+            opacity: 1
+            &:after
+                width: 100%
+                background: #fff
+
+.footer__copyright
+    // background: orange
+    margin-left: auto
+    margin-right: 0
+    text-align: right
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    justify-content: space-between
+    
+    .footer__social
+        a
+            opacity: 0.2
+            color: #fff
+            font-size: 12px
+            &:hover
+                opacity: 1
+        ul
+            display: flex
+            align-items: center
+            margin-top: 15px
+            a
+                display: block
+                margin-left: 25px
+                font-size: 0
+.footer__copyright__author
+    p
+        margin-top: 0
+        color: #fff
+        opacity: 0.2
+        text-transform: uppercase
+        margin-bottom: 10px
+        font-size: 11px
+        letter-spacing: 1.5px
+// Page Footer - END
