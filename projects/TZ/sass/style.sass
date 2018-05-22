@@ -1,16 +1,12 @@
 /*======================================= Fonts =======================================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,900')
 /* font-family: 'Montserrat', sans-serif; */
-
-@import url(http://allfont.net/allfont.css?fonts=montserrat-hairline)
-/* font-family: 'Montserrat Hairline', Arial, serif; */
 /*======================================= Fonts END =======================================*/
+@import "normalize.min.css"
 
-$font-weight: 400
 $font-size: 16px
 $line-height: 1.4
 $font-1: 'Montserrat'
-$font-2: 'Montserrat Hairline'
 $color: #232323
 $main-bg: #f5f6f8
 $bg-2: #26e6e6
@@ -95,9 +91,8 @@ h1, h2, h3, h4, h5
     
 
 .heading
-    font-size: 72px;
-    font-weight: 400;
-    font-family: $font-2
+    font-size: 72px
+    font-weight: 100
     margin-bottom: 5px
 .heading--upper
     text-transform: uppercase
@@ -286,6 +281,16 @@ h1, h2, h3, h4, h5
     box-sizing: border-box
     background: url('../img/promo-bg.jpg') no-repeat bottom
     background-size: cover
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        height: 337px
+        background: url('../img/cloud-mask-promo.png') no-repeat center
+        background-size: cover
     .wrapper
         box-sizing: border-box
         // padding-top: 140px
@@ -370,7 +375,7 @@ h1, h2, h3, h4, h5
     padding-top: 50px
     padding-bottom: 50px
     text-align: center
-    font-weight: bold
+    font-weight: 600
     font-size: 50px
 // Iphone Slider - END
 
@@ -495,7 +500,7 @@ h1, h2, h3, h4, h5
             font-size: 18px
             text-transform: none
             margin-bottom: 15px
-            font-weight: 500
+            font-weight: 600
         p
             font-size: 14px
             opacity: 0.5
@@ -667,7 +672,8 @@ h1, h2, h3, h4, h5
         display: block
         color: #000
         font-size: 12px
-        font-weight: 300
+        text-transform: uppercase
+        font-weight: 400
         line-height: 1
         padding: 15px
         background: #26e6e6
