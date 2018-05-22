@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*======================================= Fonts =======================================*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,900");
 /* font-family: 'Montserrat', sans-serif; */
@@ -612,6 +613,77 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 0.8px;
     line-height: 1.7;
     margin-bottom: 20px; }
+
+.quotes {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  .quotes .owl-stage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .quotes .owl-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 380px; }
+
+.quotes__item {
+  position: relative;
+  background: #fff;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  padding-left: 60px;
+  padding-right: 60px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .quotes__item:before {
+    content: '“';
+    font: inherit;
+    font-size: 42px;
+    font-weight: 900;
+    opacity: 0.2;
+    position: absolute;
+    top: 20px;
+    left: 40px; }
+  .quotes__item:after {
+    content: '”';
+    font: inherit;
+    font-size: 42px;
+    font-weight: 900;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 20px;
+    right: 40px; }
+  .quotes__item p {
+    margin-top: 0; }
+  .quotes__item .quote {
+    font-size: 42px;
+    font-weight: 100;
+    margin-bottom: 25px; }
+  .quotes__item .quote-author {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-top: auto;
+    margin-bottom: 0;
+    letter-spacing: 0.6px; }
 
 .doit {
   padding-top: 80px;
