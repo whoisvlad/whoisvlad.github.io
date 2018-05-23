@@ -1,23 +1,46 @@
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    center: true,
-    loop:true,
-    dots:false,
-    margin:0,
-    nav:false,
-    responsive:{
-        0:{
-            items:1.5
-        },
-        600:{
-            items:1.5
-        },
-        1000:{
-            items:1.5
-        },
-        1400:{
-            items:2
+$(document).ready(function() {
+    $(".quote-slider").owlCarousel({
+        center: true,
+        loop: true,
+        dots: false,
+        margin: 24,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1.5
+            },
+            600: {
+                items: 1.5
+            },
+            1000: {
+                items: 1.5
+            },
+            1400: {
+                items: 2
+            }
         }
-    }
-});
+    });
+    $(".iphone-slider").owlCarousel({
+        // mouseDrag: false,
+        // touchDrag: false,
+        center: true,
+        loop: false,
+        dots: false,
+        margin: 5,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            },
+            1400: {
+                items: 1
+            }
+        }
+    });
 });

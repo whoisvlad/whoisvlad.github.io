@@ -1,5 +1,5 @@
 /*======================================= Fonts =======================================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,900')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,600,900')
 /* font-family: 'Montserrat', sans-serif; */
 /*======================================= Fonts END =======================================*/
 @import "normalize.min.css"
@@ -182,6 +182,7 @@ h1, h2, h3, h4, h5
         justify-content: space-between
         margin-left: auto
         margin-right: auto
+        flex-wrap: wrap
 
 @keyframes fade-down
     0%
@@ -220,7 +221,7 @@ h1, h2, h3, h4, h5
             margin: 0
             display: block
             color: #fff
-            font-weight: 300
+            font-weight: 400
             font-size: 12px
             opacity: 0.5
             line-height: 1
@@ -301,7 +302,7 @@ h1, h2, h3, h4, h5
         p
             margin-top: 0
             font-size: 12px
-            font-weight: 300
+            font-weight: 400
             text-transform: uppercase
             letter-spacing: 0.6px
 // Index Promo - END
@@ -347,13 +348,13 @@ h1, h2, h3, h4, h5
                     color: #ffffff
                     font-size: 10px
                     line-height: 1
-                    font-weight: 300
+                    font-weight: 400
                     text-transform: uppercase
                     letter-spacing: 0.5px;
         p
             opacity: 0.5
             font-size: 14px
-            font-weight: 300
+            font-weight: 400
             margin-top: 0
         .feature-icon
             width: 120px
@@ -370,13 +371,59 @@ h1, h2, h3, h4, h5
 
 
 // Iphone Slider
-.iphone-slider
-    background: $bg-2
+.iphone-block
+    // background: $bg-2
+    background: antiquewhite
     padding-top: 50px
-    padding-bottom: 50px
+    padding-bottom: 150px
     text-align: center
     font-weight: 600
     font-size: 50px
+    position: relative
+    color: white
+    overflow: hidden
+    
+    .owl-nav
+        position: absolute
+        bottom: -50px
+        left: -100px
+        background: crimson
+        *
+            outline: none
+    .owl-carousel
+        width: 350px
+
+        position: relative
+        top: 148px
+        left: calc(-25%)
+
+        background: rgba(0,0,0,0.9)
+        transform: scale(1.12) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px)
+        transform-origin: 0% 0%
+    .slider-container
+        margin-left: auto
+        margin-right: auto
+        padding-top: 100px
+        padding-bottom: 100px
+        background: url('../img/iphine-slider/iphone-full.png') no-repeat
+        
+.iphone-slider
+    margin-left: auto
+    margin-right: auto
+    // position: absolute
+    // z-index: 10000
+
+    
+    .item
+        background: lighten(#141616, 10%)
+        height: 655px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        cursor: default
+        // overflow: hidden    
 // Iphone Slider - END
 
 
@@ -594,8 +641,8 @@ h1, h2, h3, h4, h5
 .quotes__item
     position: relative
     background: #fff
-    margin-left: 12px
-    margin-right: 12px
+    // margin-left: 12px
+    // margin-right: 12px
     padding-top: 65px
     padding-bottom: 65px
     padding-left: 60px
@@ -754,6 +801,8 @@ h1, h2, h3, h4, h5
     padding-top: 70px
     padding-bottom: 70px
     text-align: center
+    overflow: hidden
+    
     .wrapper
         max-width: 1100px
     h1
@@ -775,6 +824,8 @@ h1, h2, h3, h4, h5
     // background-size: contain
     // background-size: auto 100%
     background-size: 120% 90%
+    overflow: hidden
+    
     ul
         list-style-type: none
         margin: 0
@@ -792,7 +843,7 @@ h1, h2, h3, h4, h5
         letter-spacing: 2px
         line-height: 1.25
         margin-top: 0
-        margin-bottom: 250px
+        margin-bottom: 230px
         color: #000
         top: 0px
         right: 10px

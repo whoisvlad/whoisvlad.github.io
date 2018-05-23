@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*======================================= Fonts =======================================*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,600,900");
 /* font-family: 'Montserrat', sans-serif; */
 /*======================================= Fonts END =======================================*/
 @import url(normalize.min.css);
@@ -180,7 +180,9 @@ h1, h2, h3, h4, h5 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 
 @-webkit-keyframes fade-down {
   0% {
@@ -233,7 +235,7 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     display: block;
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     opacity: 0.5;
     line-height: 1;
@@ -322,7 +324,7 @@ h1, h2, h3, h4, h5 {
     .index-promo .wrapper p {
       margin-top: 0;
       font-size: 12px;
-      font-weight: 300;
+      font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.6px; }
 
@@ -391,13 +393,13 @@ h1, h2, h3, h4, h5 {
         color: #ffffff;
         font-size: 10px;
         line-height: 1;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.5px; }
     .features__list li p {
       opacity: 0.5;
       font-size: 14px;
-      font-weight: 300;
+      font-weight: 400;
       margin-top: 0; }
     .features__list li .feature-icon {
       width: 120px;
@@ -410,13 +412,62 @@ h1, h2, h3, h4, h5 {
       .features__list li .feature-icon.card {
         background: url("../img/icons/card.png") no-repeat center center; }
 
-.iphone-slider {
-  background: #26e6e6;
+.iphone-block {
+  background: antiquewhite;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
   text-align: center;
   font-weight: 600;
-  font-size: 50px; }
+  font-size: 50px;
+  position: relative;
+  color: white;
+  overflow: hidden; }
+  .iphone-block .owl-nav {
+    position: absolute;
+    bottom: -50px;
+    left: -100px;
+    background: crimson; }
+    .iphone-block .owl-nav * {
+      outline: none; }
+  .iphone-block .owl-carousel {
+    width: 350px;
+    position: relative;
+    top: 148px;
+    left: calc(-25%);
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-transform: scale(1.12) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px);
+    transform: scale(1.12) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px);
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; }
+  .iphone-block .slider-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url("../img/iphine-slider/iphone-full.png") no-repeat; }
+
+.iphone-slider {
+  margin-left: auto;
+  margin-right: auto; }
+  .iphone-slider .item {
+    background: #2c3131;
+    height: 655px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: default; }
 
 .build {
   padding-top: 100px;
@@ -631,8 +682,6 @@ h1, h2, h3, h4, h5 {
 .quotes__item {
   position: relative;
   background: #fff;
-  margin-left: 12px;
-  margin-right: 12px;
   padding-top: 65px;
   padding-bottom: 65px;
   padding-left: 60px;
@@ -791,7 +840,8 @@ h1, h2, h3, h4, h5 {
   background: #fff;
   padding-top: 70px;
   padding-bottom: 70px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   .join .wrapper {
     max-width: 1100px; }
   .join h1 {
@@ -806,7 +856,8 @@ h1, h2, h3, h4, h5 {
   border-top: 1px solid transparent;
   padding-top: 30px;
   background: url("../img/footer/footer-bg-min.png") no-repeat center bottom;
-  background-size: 120% 90%; }
+  background-size: 120% 90%;
+  overflow: hidden; }
   .page-footer ul {
     list-style-type: none;
     margin: 0;
@@ -822,7 +873,7 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 2px;
     line-height: 1.25;
     margin-top: 0;
-    margin-bottom: 250px;
+    margin-bottom: 230px;
     color: #000;
     top: 0px;
     right: 10px; }
