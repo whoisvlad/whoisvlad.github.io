@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Fjord — modern landing page</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Slick -->
+	<link rel='stylesheet prefetch' href='css/slick.css'>
 	<!-- carousel -->
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
@@ -101,19 +103,50 @@
 	</section>
 	<!-- Features END -->
 
-	<!-- Slider -->
+	<!-- Iphone Slider Block -->
 	<section class="iphone-block">
-		<div class="wrapper">
-			<div class="slider-container">
-				<div class="iphone-slider owl-carousel owl-theme">
-					<div class="item"><img src="img/doit/01.jpg"></div>
-					<div class="item"><img src="img/doit/02.jpg"></div>
-					<div class="item"><img src="img/doit/04.jpg"></div>
+		<div class="iphone-block__content">
+			<ul class="iphone-block__list">
+				<li>
+					<h3>Create a beautiful website.</h3>
+					<p>Whether you want to create a blog, eCommerce store, portfolio, or all of the above, you can express your idea with a website powered by our elegant yet intuitive platform.</p>
+				</li>
+
+				<li>
+					<h3>Make your our business.</h3>
+					<p>From goods to services, every business needs a space online to bring in customers.</p>
+				</li>
+
+				<li>
+					<h3>Be artist</h3>
+					<p>An artist should always have control over their creative process.</p>
+				</li>
+			</ul>
+			<a href="javascript:void">Get Started</a>
+		</div>
+		<!-- Slider -->
+		<div class="overlay"></div>
+		<div class="phone-slider-wrapper">
+			<div class="slider fade">
+				<div class="slide">
+					<div class="iphone-block__img-container">
+						<img src="img/doit/01.jpg">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="iphone-block__img-container">
+						<img src="img/doit/02.jpg">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="iphone-block__img-container">
+						<img src="img/doit/04.jpg">
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Slider END -->
+	<!-- Iphone Slider Block END -->
 
 	<!-- Build it -->
 	<section class="build">
@@ -367,9 +400,14 @@
 	</section>
 	<!-- Footer END -->
 
+
 	<!-- scripts -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<!-- carousel -->
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/carousel.js"></script>
+	<!-- slick -->
+	<script src='js/slick.min.js'></script>
+	<script type="text/javascript" src="js/slick-set.js"></script>
 </body>
 </html>

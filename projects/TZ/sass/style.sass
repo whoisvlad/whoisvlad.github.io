@@ -372,58 +372,193 @@ h1, h2, h3, h4, h5
 
 // Iphone Slider
 .iphone-block
-    // background: $bg-2
-    background: antiquewhite
-    padding-top: 50px
-    padding-bottom: 150px
-    text-align: center
-    font-weight: 600
-    font-size: 50px
+    // background: antiquewhite
+    background: #fff
     position: relative
-    color: white
     overflow: hidden
-    
-    .owl-nav
-        position: absolute
-        bottom: -50px
-        left: -100px
-        background: crimson
-        *
-            outline: none
-    .owl-carousel
-        width: 350px
-
+    .iphone-block__img-container
+        width: 340px
+        height: 700px
+        overflow: hidden
         position: relative
-        top: 148px
-        left: calc(-25%)
+        top: -25px
+        left: -15px
+        transform: scale(1.12) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
 
-        background: rgba(0,0,0,0.9)
+    .overlay
+        background: url('../img/iphine-slider/iphone-cut.png') no-repeat top center
+        width: 944px
+        height: 789px
+        z-index: 50
+        position: absolute
+        top: 70px
+        left: calc(50% - 572px)
+    .slide
+        img
+            // transform: scale(1.12) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+            // width: 350px
+            height: 700px
+            position: relative
+            // top: -20px
+    .slick-arrow
+        position: absolute
+        z-index: 5000
+        width: 80px
+        height: 80px
+        overflow: hidden
+        border-radius: 100%
+        border: 3px solid white
+        background: transparent
+        outline: none
+        cursor: pointer
+        transition: all 0.4s ease
+        opacity: 0.4
+        font-size: 0
+        box-sizing: border-box
+        display: block
         transform: scale(1.12) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px)
-        transform-origin: 0% 0%
-    .slider-container
-        margin-left: auto
-        margin-right: auto
-        padding-top: 100px
-        padding-bottom: 100px
-        background: url('../img/iphine-slider/iphone-full.png') no-repeat
-        
-.iphone-slider
-    margin-left: auto
-    margin-right: auto
-    // position: absolute
-    // z-index: 10000
-
-    
-    .item
-        background: lighten(#141616, 10%)
-        height: 655px
+        &:hover
+            opacity: 1
+    .slick-prev
+        left: calc(50% - 450px)
+        top: 570px
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            background: url('../img/arrow.png') no-repeat 47% center
+    .slick-next
+        right: calc(50% - 140px)
+        top: 200px
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            background: url('../img/arrow.png') no-repeat 47% center
+            transform: scale(-1)
+    .phone-slider-wrapper
+        text-align: center
         width: 100%
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        cursor: default
-        // overflow: hidden    
+        height: 953px
+        z-index: 1
+    .phone-slider-wrapper 
+        .slider
+            position: absolute
+            width: 100%
+            top: 0px
+            left: 0px
+        .slide
+            position: relative
+            padding: 110px 200px 100px 0
+            // height: 100% !important
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &:nth-child(1)
+                background: #26e6e6
+            &:nth-child(2)
+                // background: darken(#cb0234, 10%)
+                background: rgba(150,0,0,0.8)
+            &:nth-child(3)
+                background: #5dca88
+
+        .slick-track
+            padding: 0px 0 20px 0
+        .slick-dots
+            position: relative
+            bottom: 0
+            left: 0
+            list-style: none
+            margin: 0
+            padding: 0
+            font-size: 0
+            text-align: center
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: center
+            align-content: flex-end
+        .slick-dots
+            li
+                flex-shrink: 1
+                border: 3px solid #C3C8C9
+                border-radius: 50%
+                background-color: #fff
+                width: 12px
+                height: 12px
+                margin: 0 10px
+                &.slick-active
+                    background-color: #C3C8C9
+                button
+                    visibility: hidden
+// Content
+.iphone-block__content
+    background: white
+    position: absolute
+    top: 100px
+    left: calc(50% + 200px)
+    width: 400px
+    box-sizing: border-box
+    padding-top: 50px
+    z-index: 100
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+        padding-left: 120px
+        padding-right: 50px
+        h3
+            font-weight: 600
+            font-size: 18px
+            margin-top: 0
+            margin-bottom: 20px
+        p
+            font-weight: 400
+            font-size: 14px
+            margin-top: 0
+            margin-bottom: 60px
+            opacity: 0.5
+        li
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                left: -85px
+                top: -7px
+                width: 60px
+                height: 60px
+                background: crimson
+            &:nth-child(1)
+                &:before
+                    background: url('../img/icons/sites.png') no-repeat center top
+                    background-size: contain
+            &:nth-child(2)
+                &:before
+                    background: url('../img/icons/case.png') no-repeat center top
+                    background-size: contain
+            &:nth-child(3)
+                &:before
+                    background: url('../img/icons/pen.png') no-repeat center top
+                    background-size: contain
+    a
+        display: block
+        background: #000
+        color: #fff
+        font-size: 12px
+        text-transform: uppercase
+        line-height: 1
+        text-align: center
+        padding-top: 20px
+        padding-bottom: 20px
+        &:hover
+            background: lighten(#000, 15%)
 // Iphone Slider - END
 
 

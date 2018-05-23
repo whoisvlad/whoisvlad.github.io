@@ -1,3 +1,4 @@
+// Owl Carousel settings
 $(document).ready(function() {
     $(".quote-slider").owlCarousel({
         center: true,
@@ -17,29 +18,6 @@ $(document).ready(function() {
             },
             1400: {
                 items: 2
-            }
-        }
-    });
-    $(".iphone-slider").owlCarousel({
-        // mouseDrag: false,
-        // touchDrag: false,
-        center: true,
-        loop: false,
-        dots: false,
-        margin: 5,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            },
-            1400: {
-                items: 1
             }
         }
     });
