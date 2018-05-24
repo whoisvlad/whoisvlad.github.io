@@ -3,7 +3,7 @@ $('.slider').slick({
 	arrows: false,
 	dots: false,
 	arrows: true,
-	infinite: false,
+	infinite: true,
 	speed: 500,
 	fade: true,
 	cssEase: 'linear'

@@ -377,13 +377,17 @@ h1, h2, h3, h4, h5
     position: relative
     overflow: hidden
     .iphone-block__img-container
-        width: 340px
-        height: 700px
+        width: 370px
+        height: 780px
         overflow: hidden
         position: relative
-        top: -25px
+        top: -65px
         left: -15px
-        transform: scale(1.12) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #141616
+        transform: scale(1) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
 
     .overlay
         background: url('../img/iphine-slider/iphone-cut.png') no-repeat top center
@@ -393,11 +397,13 @@ h1, h2, h3, h4, h5
         position: absolute
         top: 70px
         left: calc(50% - 572px)
+
     .slide
         img
             // transform: scale(1.12) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
             // width: 350px
-            height: 700px
+            // height: 700px
+            // height: 100%
             position: relative
             // top: -20px
     .slick-arrow
@@ -416,31 +422,45 @@ h1, h2, h3, h4, h5
         font-size: 0
         box-sizing: border-box
         display: block
-        transform: scale(1.12) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px)
+        transform: scale(1) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px)
         &:hover
             opacity: 1
     .slick-prev
-        left: calc(50% - 450px)
-        top: 570px
+        left: calc(50% - 440px)
+        top: 580px
         &:before
-            content: ''
+            content: "<"
+            // font-weight: bold
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            color: white
             position: absolute
             top: 0
             bottom: 0
             right: 0
             left: 0
-            background: url('../img/arrow.png') no-repeat 47% center
+            // background: url('../img/arrow.png') no-repeat 47% center
     .slick-next
         right: calc(50% - 140px)
         top: 200px
         &:before
-            content: ''
+            content: "<"
+            // font-weight: bold
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            color: white
             position: absolute
             top: 0
             bottom: 0
             right: 0
             left: 0
-            background: url('../img/arrow.png') no-repeat 47% center
+            // background: url('../img/arrow.png') no-repeat 47% center
             transform: scale(-1)
     .phone-slider-wrapper
         text-align: center
@@ -453,6 +473,7 @@ h1, h2, h3, h4, h5
             width: 100%
             top: 0px
             left: 0px
+            background: #141616
         .slide
             position: relative
             padding: 110px 200px 100px 0
@@ -465,7 +486,7 @@ h1, h2, h3, h4, h5
                 background: #26e6e6
             &:nth-child(2)
                 // background: darken(#cb0234, 10%)
-                background: rgba(150,0,0,0.8)
+                background: #DDA0DD
             &:nth-child(3)
                 background: #5dca88
 
@@ -504,10 +525,18 @@ h1, h2, h3, h4, h5
     position: absolute
     top: 100px
     left: calc(50% + 200px)
-    width: 400px
+    width: 390px
     box-sizing: border-box
     padding-top: 50px
     z-index: 100
+    &:before
+        content: ''
+        position: absolute
+        bottom: 100px
+        left: 0
+        height: 220px
+        width: 5px
+        background: crimson
     ul
         list-style-type: none
         margin: 0
