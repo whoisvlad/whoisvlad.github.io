@@ -4,18 +4,18 @@
 /*======================================= Fonts END =======================================*/
 @import "normalize.min.css"
 
-$font-size: 16px
+$font-size: 14px
 $line-height: 1.4
 $font-1: 'Montserrat'
 $color: #232323
 $main-bg: #f5f6f8
 $bg-2: #26e6e6
-$wrapper: 960px
+$wrapper: 980px
 $bg-temp: rgba(150,0,0,0.8)
 
 body
     color: $color
-    font-size: 1.2rem
+    font-size: $font-size
     line-height: 1.4
     // min-height: 2000px
     // padding-bottom: 500px
@@ -353,7 +353,6 @@ h1, h2, h3, h4, h5
                     letter-spacing: 0.5px;
         p
             opacity: 0.5
-            font-size: 14px
             font-weight: 400
             margin-top: 0
         .feature-icon
@@ -527,22 +526,30 @@ h1, h2, h3, h4, h5
     left: calc(50% + 200px)
     width: 390px
     box-sizing: border-box
-    padding-top: 50px
     z-index: 100
+    *   
+        position: relative
+        z-index: 10
     &:before
         content: ''
         position: absolute
-        bottom: 100px
-        left: 0
-        height: 220px
+        bottom: 80px
+        left: 0px
+        height: 250px
         width: 5px
+        z-index: -1
         background: crimson
+        box-shadow: -10px 0px 50px 5px rgba(0,0,0,0.75)
     ul
         list-style-type: none
         margin: 0
         padding: 0
+        padding-top: 50px
         padding-left: 120px
         padding-right: 50px
+        background: #fff
+        display: flex
+        flex-direction: column
         h3
             font-weight: 600
             font-size: 18px
@@ -550,7 +557,6 @@ h1, h2, h3, h4, h5
             margin-bottom: 20px
         p
             font-weight: 400
-            font-size: 14px
             margin-top: 0
             margin-bottom: 60px
             opacity: 0.5
@@ -598,7 +604,7 @@ h1, h2, h3, h4, h5
     background: #fff
     text-align: center
     p
-        max-width: 450px
+        max-width: 480px
         margin-left: auto
         margin-right: auto
         margin-top: 20px
@@ -651,6 +657,152 @@ h1, h2, h3, h4, h5
 // Features 2 - END
 
 
+// iPad Block
+.ipad-block
+    // background: antiquewhite
+    overflow: hidden
+    padding-bottom: 170px
+    .wrapper
+        max-width: 1370px
+        position: relative
+        // left: -10px
+        padding-left: 120px
+        padding-right: 120px
+        padding-bottom: 130px
+        background: #000
+        overflow: visible
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        color: #fff
+.ipad-block__conetnt
+    width: 55%
+    min-width: 300px
+    padding-top: 120px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .heading
+        line-height: 1
+        margin-bottom: 40px
+        white-space: pre
+    p
+        opacity: 0.5
+        margin-bottom: 50px
+    .link
+        background: $bg-2
+        margin-top: auto
+        margin-bottom: 60px
+
+.ipad-block__slider
+    position: relative
+    right: -300px
+    flex-shrink: 0
+    top: 250px
+    width: 928.148px
+    height: 670px
+    // box-shadow: inset 0 0 0 4px green
+    background: url('../img/IPad_Pro_Mockup.png') no-repeat center center
+    background-size: 99.9%
+
+.ipad-block__slider-container
+    width: 800px
+    height: 601px
+    // background: rgba(0,150,0,0.2)
+    position: relative
+    top: 35px
+    left: 64px
+    *
+        outline: none
+    .item
+        background: #ebebeb
+        height: 601px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        img
+            display: block
+            object-fit: contain
+            
+    .owl-nav
+        position: absolute
+        left: -250px
+        top: calc(50% - 40px)
+        // background: orange
+        .owl-prev
+            margin: 0 !important
+            border-radius: 100% !important
+            &:hover
+                background: transparent !important
+            span
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 100%
+                box-sizing: border-box
+                width: 70px
+                height: 70px
+                background: transparent
+                border: 3px solid #fff
+                font-size: 0
+                position: relative
+                opacity: 0.5
+                transition: all 0.4s ease
+                &:hover
+                    opacity: 1
+                &:before
+                    content: "<"
+                    position: absolute
+                    font-size: 24px
+                    color: #fff
+                    top: 0
+                    bottom: 0
+                    right: 0
+                    left: 0
+                    display: flex
+                    justify-content: center
+                    align-items: center
+        .owl-next
+            margin: 0 !important
+            border-radius: 100% !important
+            &:hover
+                background: transparent !important
+            span
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 100%
+                box-sizing: border-box
+                width: 70px
+                height: 70px
+                background: transparent
+                border: 3px solid #fff
+                font-size: 0
+                position: relative
+                margin-left: 10px
+                opacity: 0.5
+                transition: all 0.4s ease
+                &:hover
+                    opacity: 1
+                &:before
+                    content: ">"
+                    position: absolute
+                    font-size: 24px
+                    color: #fff
+                    top: 0
+                    bottom: 0
+                    right: 0
+                    left: 0
+                    display: flex
+                    justify-content: center
+                    align-items: center
+// slide 600x800 pixels
+        
+// iPad Block - END
+
+
 // Platform Features
 .platform-features
     padding-top: 70px
@@ -659,8 +811,9 @@ h1, h2, h3, h4, h5
     .heading--small
         font-size: 12px
         margin-bottom: 35px
-    p
+    .caption
         font-size: 18px
+    p
         margin-top: 0
         margin-bottom: 70px
 
@@ -713,7 +866,6 @@ h1, h2, h3, h4, h5
             margin-bottom: 15px
             font-weight: 600
         p
-            font-size: 14px
             opacity: 0.5
             padding-left: 3px
             padding-right: 5px
@@ -760,7 +912,8 @@ h1, h2, h3, h4, h5
             color: #fff
             // top: -15px
             .link
-                color: #fff
+                background: $bg-2
+                // color: #fff
                 &:hover
                     color: #000
     p
@@ -779,7 +932,6 @@ h1, h2, h3, h4, h5
         margin-bottom: 15px
     .description
         font-weight: 400
-        font-size: 14px
         opacity: 0.5
         letter-spacing: 0.8px
         line-height: 1.7
