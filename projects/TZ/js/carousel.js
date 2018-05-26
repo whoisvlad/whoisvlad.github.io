@@ -3,15 +3,16 @@ $(document).ready(function() {
     $(".quote-slider").owlCarousel({
         center: true,
         loop: true,
+        // autoplay: true,
         dots: false,
         margin: 24,
         nav: false,
         responsive: {
             0: {
-                items: 1.5
+                items: 1.1
             },
             600: {
-                items: 1.5
+                items: 1.1
             },
             1000: {
                 items: 1.5

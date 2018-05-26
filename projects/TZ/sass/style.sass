@@ -107,20 +107,21 @@ h1, h2, h3, h4, h5
     text-align: center
 // Main Header
 .main-header
-    position: absolute
-    z-index: 800
+    position: fixed
+    z-index: 10000
     box-sizing: border-box
     padding-top: 45px
     padding-bottom: 45px
     width: 100%
-    // background: $bg-temp
+    transition: all 0.4s ease
+    background: rgba(245, 246, 248, 0.2)
     .wrapper, nav, .page-nav
         display: flex
         flex-direction: row
         align-items: center
         margin-right: 10px
         list-style-type: none
-    nav
+    .header-navigation
         margin-right: 0
         margin-left: auto
     .page-nav
@@ -256,11 +257,13 @@ h1, h2, h3, h4, h5
         // background: crimson
         display: none
         position: absolute
+        // position: relative
         z-index: 500
-        right: 5px
+        right: 15px
         top: calc(50% - 6px)
         transition: all 0.4s ease
-.menu-button--close
+        cursor: pointer
+.menu-button.close
     .menu-button__line
         background: crimson
 .menu-button__line
@@ -389,7 +392,7 @@ h1, h2, h3, h4, h5
         transform: scale(1) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
 
     .overlay
-        background: url('../img/iphine-slider/iphone-cut.png') no-repeat top center
+        background: url('../img/iphone-slider/iphone-cut.png') no-repeat top center
         width: 944px
         height: 789px
         z-index: 50
@@ -402,7 +405,8 @@ h1, h2, h3, h4, h5
             // transform: scale(1.12) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
             // width: 350px
             // height: 700px
-            // height: 100%
+            // width: 100%
+            height: 98%
             position: relative
             // top: -20px
     .slick-arrow
@@ -424,42 +428,29 @@ h1, h2, h3, h4, h5
         transform: scale(1) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px)
         &:hover
             opacity: 1
+    .slick-prev, .slick-next
+        &:before
+            content: "<"
+            // font-weight: bold
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            color: white
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
     .slick-prev
         left: calc(50% - 440px)
         top: 580px
         &:before
-            content: "<"
-            // font-weight: bold
-            display: flex
-            flex-direction: row
-            justify-content: center
-            align-items: center
-            font-size: 30px
-            color: white
-            position: absolute
-            top: 0
-            bottom: 0
-            right: 0
-            left: 0
-            // background: url('../img/arrow.png') no-repeat 47% center
     .slick-next
         right: calc(50% - 140px)
         top: 200px
         &:before
-            content: "<"
-            // font-weight: bold
-            display: flex
-            flex-direction: row
-            justify-content: center
-            align-items: center
-            font-size: 30px
-            color: white
-            position: absolute
-            top: 0
-            bottom: 0
-            right: 0
-            left: 0
-            // background: url('../img/arrow.png') no-repeat 47% center
             transform: scale(-1)
     .phone-slider-wrapper
         text-align: center
@@ -472,7 +463,25 @@ h1, h2, h3, h4, h5
             width: 100%
             top: 0px
             left: 0px
-            background: #141616
+            // background: #141616
+            background: #fff
+            &:before
+                content: ''
+                position: absolute
+                width: 100px
+                height: 100px
+                // background: crimson
+                // z-index: 500000
+                width: 370px
+                height: 780px
+                overflow: hidden
+                top: 45px
+                left: calc(50% - 300px)
+                display: flex
+                justify-content: center
+                align-items: center
+                background: #141616
+                transform: scale(1) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
         .slide
             position: relative
             padding: 110px 200px 100px 0
@@ -708,7 +717,8 @@ h1, h2, h3, h4, h5
 .ipad-block__slider-container
     width: 800px
     height: 601px
-    // background: rgba(0,150,0,0.2)
+    // background: rgba(0,150,0,0.9)
+    background: #ebebeb
     position: relative
     top: 35px
     left: 64px
@@ -1287,3 +1297,333 @@ h1, h2, h3, h4, h5
         font-size: 11px
         letter-spacing: 1.5px
 // Page Footer - END
+
+.sticky
+    position: fixed
+    top: 0
+    background: #f5f6f8
+    padding-top: 0px
+    padding-bottom: 0px
+    transition: all 0.4s ease
+    
+
+
+// Appear animation
+// .animate
+//     opacity: 0
+//     transition: opacity 1s
+//     &.scroll-watch-in-view
+//         opacity: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Media Queries
+@media screen and (max-width: 900px)
+    .main-header
+        .header-navigation
+            transition: all 0.7s ease
+            position: fixed
+            background: rgba(0,0,0,0.9)
+            top: 0
+            height: 0%
+            overflow: hidden
+            right: 0
+            left: 0
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            opacity: 0
+            &.nav-open
+                opacity: 1
+                height: 100%
+            .page-nav__dropdown
+                z-index: 5
+                &:hover
+                    z-index: 10
+
+            .page-nav
+                flex-direction: column
+                padding-left: 0
+                margin-right: 0
+                margin-bottom: 30px
+                flex-wrap: nowrap
+                li.page-nav__dropdown
+                    &>a
+                        &::after
+                            right: -8px
+                            border-top: 3px solid #fff
+                            border-left: 3px solid transparent
+                            border-right: 3px solid transparent
+                .page-nav__item
+                    color: #fff
+                    margin: 0 !important
+                    padding-right: 5px !important
+            .button
+                &:hover
+                    background: #fff
+                    color: #000
+        .menu-button
+            display: block
+            cursor: pointer
+    
+    .iphone-block
+        .overlay
+            transform: scale(1)
+            left: calc(50% - 450px)
+            top: 50px
+        .iphone-block__img-container
+            transform: scale(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+            left: 105px
+            top: -90px
+        .slide
+            padding-bottom: 60px !important
+        .slick-prev, .slick-next
+            opacity: 0.7
+        .slick-prev
+            left: calc(50% - 250px)
+        .slick-next
+            right: calc(50% - 250px)
+
+        .phone-slider-wrapper 
+            .slider
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 100px
+                    height: 100px
+                    // background: crimson
+                    // z-index: 500000
+                    width: 370px
+                    height: 780px
+                    overflow: hidden
+                    top: -9px
+                    left: calc(50% - 220px)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background: #141616
+                    transform: scale(1) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+
+    .iphone-block__content
+        position: relative
+        width: 100%
+        top: 0
+        left: 0
+        &:before
+            display: none
+
+    .ipad-block
+        padding-bottom: 25px
+        .wrapper
+            padding-left: 15px
+            padding-right: 15px
+            display: flex
+            flex-direction: column
+    .ipad-block__slider
+        top: 0
+        right: 0
+
+    .platform-features__list
+        flex-direction: column
+        align-items: center
+        li
+            width: 90%
+            margin-bottom: 50px
+
+    .doit__container
+        flex-direction: column
+        align-items: center
+        a
+            top: 0 !important
+            left: 0 !important
+            right: 0 !important
+            margin-left: auto !important
+            margin-right: auto !important
+        .doit__overlay
+            opacity: 1
+
+
+    .prices__list
+        flex-direction: column
+        align-items: center
+        li
+            width: 90%
+            .description
+                margin-bottom: 50px
+            &:nth-child(1)
+                order: 2
+            &:nth-child(2)
+                order: 1
+                margin-bottom: 50px
+            &:nth-child(3)
+                order: 3
+            
+    
+
+
+@media screen and (max-width: 700px)
+    .features__list
+        flex-direction: column
+        align-items: center
+        li
+            margin-bottom: 50px
+
+
+@media screen and (max-width: 400px)
+    .index-promo
+        .heading
+            font-size: 50px
+            margin-bottom: 15px
+
+    .iphone-block
+        .overlay
+            transform: scale(0.6)
+            left: -320px
+            top: 0
+        .iphone-block__img-container
+            transform: scale(0.6) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+            left: 65px
+            top: -110px
+        .slide
+            padding-top: 100px !important
+            padding-bottom: 100px !important
+        .slick-prev, .slick-next
+            top: 620px
+            transform: none
+            opacity: 0.7
+        .slick-prev
+            left: 25px
+        .slick-next
+            right: 25px
+
+
+
+
+
+        .phone-slider-wrapper 
+            .slider
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 100px
+                    height: 100px
+                    // background: crimson
+                    // z-index: 500000
+                    width: 370px
+                    height: 780px
+                    overflow: hidden
+                    top: -9px
+                    left: calc(50% - 220px)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background: #141616
+                    transform: scale(0.63) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+
+
+
+
+
+
+
+
+
+
+    .iphone-block__content
+        position: relative
+        top: 0
+        left: 0
+    
+    .ipad-block
+        padding-bottom: 5px
+    .ipad-block__conetnt
+        width: 100%
+        .heading
+            font-size: 35px
+
+    .ipad-block__slider
+        top: 0
+        right: 200px
+        height: 400px
+        overflow: hidden
+        
+        .ipad-block__slider-container
+            top: -55px
+
+    .platform-features__list
+        flex-direction: column
+        align-items: center
+        li
+            margin-bottom: 55px
+            width: 95%
+
+    .quotes__item
+        padding: 25px
+        &:before
+            left: 5px
+            top: 0
+        &:after
+            right: 5px
+            bottom: -15px
+        .quote
+            font-size: 30px
+
+    .doit__container
+        flex-direction: column
+        align-items: center
+        a
+            top: 0 !important
+            bottom: 0 !important
+            right: 0 !important
+            left: 0 !important
+        .doit__overlay
+            opacity: 1
+
+
+    .join
+        h1
+            font-size: 48px
+
+
+    .prices__list
+        flex-direction: column
+        align-items: center
+        li
+            width: 100%
+            .description
+                margin-bottom: 55px
+        .link
+            white-space: pre
+
+
+    .page-footer
+        background-size: cover
+        .wrapper
+            padding-left: 15px
+            padding-right: 15px
+        .heading--huge
+            font-size: 48px
+
+    .page-footer__nav
+        flex-direction: column
+        ul
+            margin-bottom: 35px
+// Media Queries - END

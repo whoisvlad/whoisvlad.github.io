@@ -12,17 +12,15 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-
-	
 </head>
-<body>
+<body onscroll="myFunction()">
 	<!-- First screen -->
-	<header class="main-header">
+	<header class="main-header" id="header">
 		<div class="wrapper">
-			<a href="javascript:void"><img src="img/logo.png" alt="Logo"></a>
+			<a href="javascript:void"><img src="img/logo.png" alt="Logo" id="logo"></a>
 
 			<!-- menu -->
-			<nav>
+			<nav class="header-navigation">
 				<ul class="page-nav">
 					<li><a href="javascript:void" class="page-nav__item">Home</a></li>
 					<li class="page-nav__dropdown">
@@ -56,7 +54,7 @@
 
 				<a href="javascript:void" class="button">Start a Project</a>
 			</nav>
-			<a href="javascript:void" class="menu-button">
+			<a class="menu-button">
 				Menu
 				<div class="menu-button__line line-1"></div>
 				<div class="menu-button__line line-2"></div>
@@ -105,6 +103,30 @@
 
 	<!-- Iphone Slider Block -->
 	<section class="iphone-block">
+		<!-- Slider -->
+		<div class="overlay"></div>
+		<div class="phone-slider-wrapper">
+			<div class="slider fade">
+				<div class="slide">
+					<div class="iphone-block__img-container">
+						<img src="img/iphone-slider/01.jpeg">
+						<!-- <img src="img/icons/sites.png"> -->
+					</div>
+				</div>
+				<div class="slide">
+					<div class="iphone-block__img-container">
+						<img src="img/iphone-slider/02.jpeg">
+						<!-- <img src="img/icons/case.png"> -->
+					</div>
+				</div>
+				<div class="slide">
+					<div class="iphone-block__img-container">
+						<img src="img/iphone-slider/03.jpeg">
+						<!-- <img src="img/icons/pen.png"> -->
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="iphone-block__content">
 			<ul class="iphone-block__list">
 				<li>
@@ -123,30 +145,6 @@
 				</li>
 			</ul>
 			<a href="javascript:void">Get Started</a>
-		</div>
-		<!-- Slider -->
-		<div class="overlay"></div>
-		<div class="phone-slider-wrapper">
-			<div class="slider fade">
-				<div class="slide">
-					<div class="iphone-block__img-container">
-						<!-- <img src="img/doit/01.jpg"> -->
-						<img src="img/icons/sites.png">
-					</div>
-				</div>
-				<div class="slide">
-					<div class="iphone-block__img-container">
-						<!-- <img src="img/doit/02.jpg"> -->
-						<img src="img/icons/case.png">
-					</div>
-				</div>
-				<div class="slide">
-					<div class="iphone-block__img-container">
-						<!-- <img src="img/doit/04.jpg"> -->
-						<img src="img/icons/pen.png">
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 	<!-- Iphone Slider Block END -->
@@ -202,15 +200,15 @@
 				<div class="ipad-block__slider-container">
 					<div class="owl-carousel owl-theme ipad-slider">
 						<div class="item ipad-slider__item">
-							<img src="img/doit/02.jpg">
+							<img src="img/ipad-slider/01.jpeg">
 						</div>
 
 						<div class="item ipad-slider__item">
-							<img src="img/doit/04.jpg">
+							<img src="img/ipad-slider/02.jpeg">
 						</div>
 
 						<div class="item ipad-slider__item">
-							<img src="img/doit/05.jpg">
+							<img src="img/ipad-slider/03.jpeg">
 						</div>
 					</div>
 				</div>
@@ -442,6 +440,7 @@
 	<script type="text/javascript" src="js/carousel.js"></script>
 	<!-- slick -->
 	<script src='js/slick.min.js'></script>
+	<script src='js/menu.js'></script>
 	<script type="text/javascript" src="js/slick-set.js"></script>
 </body>
 </html>
