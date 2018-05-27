@@ -1,0 +1,63 @@
+.platform-features
+    padding-top: 70px
+    padding-bottom: 80px
+    .heading--small
+        font-size: 12px
+        margin-bottom: 35px
+    .caption
+        font-size: 18px
+    p
+        margin-top: 0
+        margin-bottom: 70px
+
+.platform-features__list
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    li
+        width: 31%
+        min-width: 250px
+        padding-left: 80px
+        margin-bottom: 25px
+        box-sizing: border-box
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            left: 0px
+            top: 2px
+            width: 60px
+            height: 70px
+            background: crimson
+        &.dashboard
+            &:before
+                background: url('../img/platform-features/01_dashboard.png') no-repeat center top
+        &.discussions
+            &:before
+                background: url('../img/platform-features/02_discussions.png') no-repeat center top
+        &.apps
+            &:before
+                background: url('../img/platform-features/03_apps.png') no-repeat center top
+        &.customize
+            &:before
+                background: url('../img/platform-features/04_customize.png') no-repeat center top
+        &.ecommerce
+            &:before
+                background: url('../img/platform-features/05_ecommerce.png') no-repeat center top
+        &.statistics
+            &:before
+                background: url('../img/platform-features/06_statistics.png') no-repeat center top
+        .heading--small
+            font-size: 18px
+            text-transform: none
+            margin-bottom: 15px
+            font-weight: 600
+        p
+            opacity: 0.5
+            padding-left: 3px
+            padding-right: 5px
+            margin-top: 0
+            margin-bottom: 0

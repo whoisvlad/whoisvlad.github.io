@@ -13,14 +13,14 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
-<body onscroll="myFunction()">
+<body onscroll="offsetTop()">
 	<!-- First screen -->
 	<header class="main-header" id="header">
 		<div class="wrapper">
 			<a href="javascript:void"><img src="img/logo.png" alt="Logo" id="logo"></a>
 
 			<!-- menu -->
-			<nav class="header-navigation">
+			<nav data-scroll-watch class="header-navigation animate">
 				<ul class="page-nav">
 					<li><a href="javascript:void" class="page-nav__item">Home</a></li>
 					<li class="page-nav__dropdown">
@@ -62,7 +62,8 @@
 			</a>
 		</div>
 	</header>
-	<section class="index-promo">
+	<!-- index-promo -->
+	<section data-scroll-watch class="index-promo animate">
 		<div class="wrapper">
 			<h1 class="heading heading--upper">Get Some <br>Fresh AIR</h1>
 			<p>Fjord - Modern Landing Page</p>
@@ -76,25 +77,25 @@
 			<h1 class="visually-hidden">Features</h1>
 
 			<ul class="features__list">
-				<li>
+				<li data-scroll-watch class="animate">
 					<span class="feature-icon mail"></span>
 					<h3 class="heading--small">GET A CUSTOMIZED <br>EMAIL ADDRESS AND MORE</h3>
 					<p>Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
-					<a href="javascript:void" class="link link--round">Learn More</a>
+					<a href="javascript:void" class="button button--round button--transparent">Learn More</a>
 				</li>
 
-				<li>
+				<li data-scroll-watch class="animate">
 					<span class="feature-icon pen"></span>
 					<h3 class="heading--small">40 MILLION <br>HIGH QUALITY IMAGES</h3>
 					<p>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
-					<a href="javascript:void" class="link link--round">Learn More</a>
+					<a href="javascript:void" class="button button--round button--transparent">Learn More</a>
 				</li>
 
-				<li>
+				<li data-scroll-watch class="animate">
 					<span class="feature-icon card"></span>
 					<h3 class="heading--small new-tag">CREATE A SIMPLE LOGO</h3>
 					<p>She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
-					<a href="javascript:void" class="link link--round">get started</a>
+					<a href="javascript:void" class="button button--round button--transparent">get started</a>
 				</li>
 			</ul>
 		</div>
@@ -104,30 +105,27 @@
 	<!-- Iphone Slider Block -->
 	<section class="iphone-block">
 		<!-- Slider -->
-		<div class="overlay"></div>
-		<div class="phone-slider-wrapper">
+		<div data-scroll-watch class="overlay animate"></div>
+		<div data-scroll-watch class="phone-slider-wrapper  animate">
 			<div class="slider fade">
 				<div class="slide">
 					<div class="iphone-block__img-container">
 						<img src="img/iphone-slider/01.jpeg">
-						<!-- <img src="img/icons/sites.png"> -->
 					</div>
 				</div>
 				<div class="slide">
 					<div class="iphone-block__img-container">
 						<img src="img/iphone-slider/02.jpeg">
-						<!-- <img src="img/icons/case.png"> -->
 					</div>
 				</div>
 				<div class="slide">
 					<div class="iphone-block__img-container">
 						<img src="img/iphone-slider/03.jpeg">
-						<!-- <img src="img/icons/pen.png"> -->
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="iphone-block__content">
+		<div data-scroll-watch class="iphone-block__content animate">
 			<ul class="iphone-block__list">
 				<li>
 					<h3>Create a beautiful website.</h3>
@@ -144,7 +142,7 @@
 					<p>An artist should always have control over their creative process.</p>
 				</li>
 			</ul>
-			<a href="javascript:void">Get Started</a>
+			<a class="button" href="javascript:void">Get Started</a>
 		</div>
 	</section>
 	<!-- Iphone Slider Block END -->
@@ -152,31 +150,31 @@
 	<!-- Build it -->
 	<section class="build">
 		<div class="wrapper">
-			<h1 class="heading">Build it beautiful</h1>
-			<p>Sometimes bold ideas don't require a full website. That's why Cover Pages can be used to convey a single idea in a beautiful way. </p>
+			<h1 data-scroll-watch class="heading animate">Build it beautiful</h1>
+			<p data-scroll-watch class="animate">Sometimes bold ideas don't require a full website. That's why Cover Pages can be used to convey a single idea in a beautiful way. </p>
 		</div>
 	</section>
 	<!-- Build it - END -->
 
-	<!-- Features 2 -->
-	<section class="features-2">
+	<!-- Features no icons -->
+	<section class="features__no-icons">
 		<div class="wrapper">
 			<h1 class="visually-hidden">Features</h1>
 
 			<ul class="features__list">
-				<li>
+				<li data-scroll-watch class="animate">
 					<h3 class="heading--small">Dummy Content</h3>
 					<p>Can make website design much easier and with our shortcode manager you can now create them even faster. Choose your desired shortcode and the manager will insert it for you.</p>
 					<a href="javascript:void" class="link">Learn More</a>
 				</li>
 
-				<li>
+				<li data-scroll-watch class="animate">
 					<h3 class="heading--small">Parallax Sections</h3>
 					<p>You can create as many sections as you like, with or without paralaxx, it’s up to you! Brooklyn does not limit your imagination,see our 8 demos.</p>
 					<a href="javascript:void" class="link">Learn More</a>
 				</li>
 
-				<li>
+				<li data-scroll-watch class="animate">
 					<h3 class="heading--small">Clean Code</h3>
 					<p>Brooklyn has been built with the latest submission requirements based on the WordPres Codex, everything is working as intended.</p>
 					<a href="javascript:void" class="link">Learn More</a>
@@ -184,19 +182,19 @@
 			</ul>
 		</div>
 	</section>
-	<!-- Features 2 END -->
+	<!-- Features no icons END -->
 
 	<!-- iPad Block -->
 	<section class="ipad-block">
 		<div class="wrapper">
-			<div class="ipad-block__conetnt">
+			<div data-scroll-watch class="ipad-block__conetnt animate">
 				<h1 class="heading">This will change <br>everything</h1>
 				<p>Your eCommerce website is just the start. Whether you are an established business or on the brink of a new idea, Squarespace gives you the tools to take your business from online store to recognized brand.</p>
 
-				<a href="javascript:void" class="link">Get Started</a>
+				<a href="javascript:void" class="button button--round button--blue">Get Started</a>
 			</div>
 
-			<div class="ipad-block__slider">
+			<div data-scroll-watch class="ipad-block__slider animate">
 				<div class="ipad-block__slider-container">
 					<div class="owl-carousel owl-theme ipad-slider">
 						<div class="item ipad-slider__item">
@@ -220,10 +218,10 @@
 	<!-- Platform Features -->
 	<section class="platform-features">
 		<div class="wrapper">
-			<h1 class="heading--small center">Platform Features</h1>
-			<p class="center caption">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
+			<h1 data-scroll-watch class="heading--small center animate">Platform Features</h1>
+			<p data-scroll-watch class="center caption animate">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
 
-			<ul class="platform-features__list">
+			<ul data-scroll-watch class="platform-features__list animate">
 				<li class="dashboard">
 					<h3 class="heading--small">Dashboard</h3>
 					<p>Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
@@ -239,7 +237,7 @@
 			</ul>
 
 
-			<ul class="platform-features__list">
+			<ul data-scroll-watch class="platform-features__list animate">
 				<li class="customize">
 					<h3 class="heading--small">Fully Customizable</h3>
 					<p>She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
@@ -258,7 +256,7 @@
 	<!-- Platform Features END -->
 
 	<!-- Quotes Slider -->
-	<section class="quotes">
+	<section data-scroll-watch class="quotes animate">
 		<h1 class="visually-hidden">Quotes</h1>
 
 		<div class="owl-carousel owl-theme quote-slider">
@@ -283,15 +281,15 @@
 	<!-- DoIt -->
 	<section class="doit">
 		<div class="wrapper">
-			<h1>Do it by yourself</h1>
+			<h1 data-scroll-watch class="animate">Do it by yourself</h1>
 
 			<div class="doit__content">
-				<div class="doit__container">
+				<div data-scroll-watch class="doit__container animate">
 					<a href="javascript:void">
 						<img src="img/doit/01.jpg" alt="Image">
 
 						<div class="doit__overlay">
-							<span>View Demo</span>
+							<span class="button button--blue">View Demo</span>
 						</div>
 					</a>
 
@@ -299,27 +297,27 @@
 						<img src="img/doit/02.jpg" alt="Image">
 
 						<div class="doit__overlay">
-							<span>View Demo</span>
+							<span class="button button--blue">View Demo</span>
 						</div>
 					</a>
 				</div>
 				
-				<div class="doit__container">
+				<div data-scroll-watch class="doit__container animate">
 					<a href="javascript:void">
 						<img src="img/doit/03.jpg" alt="Image">
 
 						<div class="doit__overlay">
-							<span>View Demo</span>
+							<span class="button button--blue">View Demo</span>
 						</div>
 					</a>
 				</div>
 				
-				<div class="doit__container">
+				<div data-scroll-watch class="doit__container animate">
 					<a href="javascript:void">
 						<img src="img/doit/04.jpg" alt="Image">
 
 						<div class="doit__overlay">
-							<span>View Demo</span>
+							<span class="button button--blue">View Demo</span>
 						</div>
 					</a>
 
@@ -327,7 +325,7 @@
 						<img src="img/doit/05.jpg" alt="Image">
 
 						<div class="doit__overlay">
-							<span>View Demo</span>
+							<span class="button button--blue">View Demo</span>
 						</div>
 					</a>
 				</div>
@@ -337,7 +335,7 @@
 	<!-- DoIt END -->
 
 	<!-- Join -->
-	<section class="join">
+	<section data-scroll-watch class="join animate">
 		<div class="wrapper">
 			<h1>Join over 1 million customers</h1>
 		</div>
@@ -345,7 +343,7 @@
 	<!-- Join END -->
 
 	<!-- Prices -->
-	<section class="prices">
+	<section data-scroll-watch class="prices animate">
 		<div class="wrapper">
 			<h1 class="visually-hidden">Prices</h1>
 
@@ -354,21 +352,21 @@
 					<p class="type">Beginner</p>
 					<p class="price">$4.99</p>
 					<p class="description">Alice wondered a little at this, but she was too much in awe of the Queen to disbelieve it. 'I'll try it when I go home,' she thought to herself, 'the next time I'm a little late for dinner.'</p>
-					<a href="javascript:void" class="link">Get Started</a>
+					<a href="javascript:void" class="button button--round button--transparent">Get Started</a>
 				</li>
 
 				<li class="best">
 					<p class="type">Standart</p>
 					<p class="price">$14.99</p>
 					<p class="description">You can create as many sections as you like, with or without paralaxx, it’s up to you! Brooklyn does not limit your imagination,see our 8 demos.</p>
-					<a href="javascript:void" class="link">Get Started</a>
+					<a href="javascript:void" class="button button--round button--blue">Get Started</a>
 				</li>
 
 				<li>
 					<p class="type">Pro</p>
 					<p class="price">$99.99</p>
 					<p class="description">Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.</p>
-					<a href="javascript:void" class="link">Get Started</a>
+					<a href="javascript:void" class="button button--round button--transparent">Get Started</a>
 				</li>
 			</ul>
 		</div>
@@ -379,7 +377,7 @@
 	<section class="page-footer">
 		<h2 class="visually-hidden">Page Footer</h2>
 		<div class="wrapper heading-wrapper">
-			<h1 class="heading--huge">This will change<br> <span>everything</span></h1>
+			<h1 data-scroll-watch class="heading--huge animate">This will change<br> <span>everything</span></h1>
 		</div>
 		<div class="page-footer__content">
 			<footer class="wrapper">
@@ -442,5 +440,9 @@
 	<script src='js/slick.min.js'></script>
 	<script src='js/menu.js'></script>
 	<script type="text/javascript" src="js/slick-set.js"></script>
+	<!-- Appear animation -->
+	<script src="js/ScrollWatch-2.0.1.min.js" type="text/javascript"></script>
+	<script src="js/modernizr.min.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
 </body>
 </html>

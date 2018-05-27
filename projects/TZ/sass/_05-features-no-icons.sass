@@ -1,0 +1,37 @@
+.features__no-icons
+    padding-top: 80px
+    padding-bottom: 80px
+    .features__list
+        text-align: left
+        li
+            justify-content: flex-start
+            align-items: flex-start
+        .heading--small
+            height: auto
+            text-transform: none
+            font-size: 16px
+        .link
+            padding-left: 0
+            padding-right: 0
+            padding-top: 5px
+            padding-bottom: 5px
+            border-radius: 0
+            margin-bottom: 0
+            margin-top: auto
+            position: relative
+            &:hover
+                background: transparent
+                padding-left: 10px
+                &:before
+                    width: calc(100% + 20px)
+            &:before
+                content: ''
+                position: absolute
+                bottom: -5px
+                top: -5px
+                left: -5px
+                width: 0%
+                height: calc(100% + 10px)
+                background: #26e6e6
+                transition: all 0.4s ease-in-out
+                z-index: -1

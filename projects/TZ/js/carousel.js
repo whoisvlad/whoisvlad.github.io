@@ -30,10 +30,12 @@ $(document).ready(function() {
         nav: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                margin: 0
             },
             600: {
-                items: 1
+                items: 1,
+                margin: 0
             },
             1000: {
                 items: 1

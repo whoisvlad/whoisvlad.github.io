@@ -1,0 +1,53 @@
+.prices
+    padding-top: 80px
+    padding-bottom: 80px
+    text-align: center
+
+.prices__list
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    color: #000
+    li
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 32%
+        min-width: 250px
+        padding-top: 35px
+        padding-left: 40px
+        padding-right: 40px
+        padding-bottom: 50px
+        box-sizing: border-box
+        cursor: default
+        background: transparent
+        transition: all 0.4s ease-in-out
+        position: relative
+        top: 0
+        &.best
+            background: #000
+            color: #fff
+    p
+        margin-top: 0
+    .button
+        margin-top: auto
+        margin-bottom: 0
+    .type
+        font-weight: 600
+        text-transform: uppercase
+        font-size: 12px
+        margin-bottom: 30px
+    .price
+        font-weight: 900
+        font-size: 50px
+        margin-bottom: 15px
+    .description
+        font-weight: 400
+        opacity: 0.5
+        letter-spacing: 0.8px
+        line-height: 1.7
+        margin-bottom: 20px

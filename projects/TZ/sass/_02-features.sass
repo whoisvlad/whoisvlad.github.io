@@ -1,0 +1,56 @@
+.features
+    padding-top: 50px
+    padding-bottom: 80px
+.features__list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    list-style-type: none
+    align-items: stretch
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    text-align: center
+    li
+        width: 29%
+        min-width: 200px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        .heading--small
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 50px
+            display: flex
+            position: relative
+            &.new-tag
+                &::after
+                    content: 'New'
+                    display: flex
+                    margin-left: 9px
+                    border-radius: 25px
+                    background: $blue
+                    padding: 8px 12px
+                    color: #ffffff
+                    font-size: 10px
+                    line-height: 1
+                    font-weight: 400
+                    text-transform: uppercase
+                    letter-spacing: 0.5px;
+        p
+            opacity: 0.5
+            font-weight: 400
+            margin-top: 0
+            margin-bottom: 35px
+        .feature-icon
+            width: 120px
+            height: 80px
+            margin-bottom: 10px
+            &.mail
+                background: url('../img/icons/mail.png') no-repeat center center
+            &.pen
+                background: url('../img/icons/pen.png') no-repeat center center
+            &.card
+                background: url('../img/icons/card.png') no-repeat center center

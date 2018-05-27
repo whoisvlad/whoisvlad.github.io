@@ -13,7 +13,7 @@ var navbar = document.getElementById("header");
 var logo = document.getElementById("logo");
 var sticky = logo.offsetTop;
 
-function myFunction() {
+function offsetTop() {
 	if (window.pageYOffset >= sticky+50) {
 		navbar.classList.add("sticky")
 	} else {
