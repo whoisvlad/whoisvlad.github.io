@@ -1,0 +1,86 @@
+.doit
+    padding-top: 80px
+    padding-bottom: 55px
+    overflow: hidden
+    position: relative
+    
+    .wrapper
+        &:before
+            content: ''
+            position: absolute
+            right: calc(100% + 100px)
+            top: 630px
+            width: 210px
+            height: 450px
+            background: url('../img/doit/left.jpg') no-repeat center
+            background-size: cover
+        &:after
+            content: ''
+            position: absolute
+            top: 320px
+            left: calc(100% + 140px)
+            width: 280px
+            height: 440px
+            background: url('../img/doit/right.jpg') no-repeat center
+            background-size: cover
+            z-index: 1
+    h1
+        text-transform: uppercase
+        font-size: 26px
+        font-weight: 900
+        margin-top: 0
+        margin-bottom: 30px
+        text-align: center
+
+.doit__content
+    a
+        display: inline-block
+        position: relative
+        z-index: 10
+        max-width: 100%
+        overflow: hidden
+        margin-bottom: 45px
+        &:hover
+            .doit__overlay
+                opacity: 1
+        img
+            display: block
+            object-fit: cover
+            z-index: 1
+.doit__container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    &:nth-child(1)
+        a
+            &:nth-child(1)
+                top: -40px
+                left: -50px
+            &:nth-child(2)
+                right: -50px
+                margin-left: auto
+                margin-right: 0
+    &:nth-child(3)
+        a
+            &:nth-child(1)
+                left: -30px
+            &:nth-child(2)
+                top: 20px
+                right: -110px
+.doit__overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 10
+    background: rgba(0,0,0,0.7)
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all 0.4s ease-in-out
+    opacity: 0
+    .button
+        color: $grey
+        &:hover
+            color: $grey
