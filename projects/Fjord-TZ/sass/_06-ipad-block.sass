@@ -1,0 +1,132 @@
+.ipad-block
+    overflow: hidden
+    padding-bottom: 170px
+    .wrapper
+        max-width: 1370px
+        position: relative
+        padding-left: 120px
+        padding-right: 120px
+        padding-bottom: 130px
+        background: #000
+        overflow: visible
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        color: #fff
+.ipad-block__conetnt
+    width: 55%
+    min-width: 300px
+    padding-top: 120px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .heading
+        line-height: 1
+        margin-bottom: 40px
+        white-space: pre
+    p
+        opacity: 0.5
+        margin-bottom: 50px
+
+.ipad-block__slider
+    position: relative
+    right: -300px
+    flex-shrink: 0
+    top: 250px
+    width: 928.148px
+    height: 670px
+    background: url('../img/IPad_Pro_Mockup.png') no-repeat center center
+    background-size: 99.9%
+
+.ipad-block__slider-container
+    width: 800px
+    height: 601px
+    background: #ebebeb
+    position: relative
+    top: 35px
+    left: 64px
+    *
+        outline: none
+    .item
+        background: #ebebeb
+        height: 601px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        img
+            display: block
+            object-fit: contain
+            
+    .owl-nav
+        position: absolute
+        left: -250px
+        top: calc(50% - 40px)
+        .owl-prev
+            margin: 0 !important
+            border-radius: 100% !important
+            &:hover
+                background: transparent !important
+            span
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 100%
+                box-sizing: border-box
+                width: 70px
+                height: 70px
+                background: transparent
+                border: 3px solid #fff
+                font-size: 0
+                position: relative
+                opacity: 0.5
+                transition: all 0.4s ease-in-out
+                &:hover
+                    opacity: 1
+                &:before
+                    content: "<"
+                    position: absolute
+                    font-size: 24px
+                    color: #fff
+                    top: 0
+                    bottom: 0
+                    right: 0
+                    left: 0
+                    display: flex
+                    justify-content: center
+                    align-items: center
+        .owl-next
+            margin: 0 !important
+            border-radius: 100% !important
+            &:hover
+                background: transparent !important
+            span
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 100%
+                box-sizing: border-box
+                width: 70px
+                height: 70px
+                background: transparent
+                border: 3px solid #fff
+                font-size: 0
+                position: relative
+                margin-left: 10px
+                opacity: 0.5
+                transition: all 0.4s ease-in-out
+                &:hover
+                    opacity: 1
+                &:before
+                    content: ">"
+                    position: absolute
+                    font-size: 24px
+                    color: #fff
+                    top: 0
+                    bottom: 0
+                    right: 0
+                    left: 0
+                    display: flex
+                    justify-content: center
+                    align-items: center

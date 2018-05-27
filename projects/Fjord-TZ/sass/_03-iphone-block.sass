@@ -1,0 +1,213 @@
+.iphone-block
+    background: #fff
+    position: relative
+    overflow: hidden
+    .iphone-block__img-container
+        width: 370px
+        height: 780px
+        overflow: hidden
+        position: relative
+        top: -65px
+        left: -15px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #141616
+        transform: scale(1) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+
+    .overlay
+        background: url('../img/iphone-slider/iphone-cut.png') no-repeat top center
+        width: 944px
+        height: 789px
+        z-index: 50
+        position: absolute
+        top: 70px
+        left: calc(50% - 572px)
+
+    .slide
+        img
+            height: 98%
+            position: relative
+    .slick-arrow
+        position: absolute
+        z-index: 5000
+        width: 80px
+        height: 80px
+        overflow: hidden
+        border-radius: 100%
+        border: 3px solid white
+        background: transparent
+        outline: none
+        cursor: pointer
+        transition: all 0.4s ease-in-out
+        opacity: 0.4
+        font-size: 0
+        box-sizing: border-box
+        display: block
+        transform: scale(1) scaleZ(1) skewX(-1deg) skewY(5deg) rotateX(37deg) rotateY(-6deg) rotateZ(-44.4deg) translateZ(0px)
+        &:hover
+            opacity: 1
+    .slick-prev, .slick-next
+        &:before
+            content: "<"
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            color: white
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+    .slick-prev
+        left: calc(50% - 440px)
+        top: 580px
+        &:before
+    .slick-next
+        right: calc(50% - 140px)
+        top: 200px
+        &:before
+            transform: scale(-1)
+    .phone-slider-wrapper
+        text-align: center
+        width: 100%
+        min-height: 953px
+        z-index: 1
+    .phone-slider-wrapper 
+        .slider
+            position: absolute
+            width: 100%
+            top: 0px
+            left: 0px
+            background: #fff
+            &:before
+                content: ''
+                position: absolute
+                width: 100px
+                height: 100px
+                width: 370px
+                height: 780px
+                overflow: hidden
+                top: 45px
+                left: calc(50% - 300px)
+                display: flex
+                justify-content: center
+                align-items: center
+                background: #141616
+                transform: scale(1) scaleZ(1) skewX(0deg) skewY(0deg) rotateX(37deg) rotateY(-6deg) rotateZ(-41deg) translateZ(0px)
+        .slide
+            position: relative
+            padding: 110px 200px 100px 0
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &:nth-child(1)
+                background: #26e6e6
+            &:nth-child(2)
+                background: #DDA0DD
+            &:nth-child(3)
+                background: #5dca88
+
+        .slick-track
+            padding: 0px 0 20px 0
+        .slick-dots
+            position: relative
+            bottom: 0
+            left: 0
+            list-style: none
+            margin: 0
+            padding: 0
+            font-size: 0
+            text-align: center
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: center
+            align-content: flex-end
+        .slick-dots
+            li
+                flex-shrink: 1
+                border: 3px solid #C3C8C9
+                border-radius: 50%
+                background-color: #fff
+                width: 12px
+                height: 12px
+                margin: 0 10px
+                &.slick-active
+                    background-color: #C3C8C9
+                button
+                    visibility: hidden
+// Content
+.iphone-block__content
+    background: white
+    position: absolute
+    top: 100px
+    left: calc(50% + 200px)
+    width: 390px
+    box-sizing: border-box
+    z-index: 100
+    display: flex
+    flex-direction: column
+
+    *   
+        position: relative
+        z-index: 10
+    &:before
+        content: ''
+        position: absolute
+        bottom: 80px
+        left: 0px
+        height: 250px
+        width: 5px
+        z-index: -1
+        background: crimson
+        box-shadow: -10px 0px 50px 5px rgba(0,0,0,0.75)
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+        padding-top: 50px
+        padding-left: 120px
+        padding-right: 50px
+        background: #fff
+        display: flex
+        flex-direction: column
+        h3
+            font-weight: 600
+            font-size: 18px
+            margin-top: 0
+            margin-bottom: 20px
+        p
+            font-weight: 400
+            margin-top: 0
+            margin-bottom: 60px
+            opacity: 0.5
+        li
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                left: -85px
+                top: -7px
+                width: 60px
+                height: 60px
+                background: crimson
+            &:nth-child(1)
+                &:before
+                    background: url('../img/icons/sites.png') no-repeat center top
+                    background-size: contain
+            &:nth-child(2)
+                &:before
+                    background: url('../img/icons/case.png') no-repeat center top
+                    background-size: contain
+            &:nth-child(3)
+                &:before
+                    background: url('../img/icons/pen.png') no-repeat center top
+                    background-size: contain
+    .button
+        text-align: center
+        display: inline-block
+        border-radius: 0
