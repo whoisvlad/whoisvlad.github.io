@@ -97,6 +97,17 @@ h6 {
     background: #fff;
     padding: 0;
     padding-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.navbar-toggler {
+    outline: none !important;
+    transition: ease 0.4s;
+    border-radius: 0;
+    border: none;
+}
+.navbar-toggler:active {
+    background: rgb(206, 205, 205);
 }
 
 .navbar li {
@@ -306,6 +317,11 @@ a:hover{
 
 
 /* FEATURES */
+.features {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
 .features .card {
     /* border-right: 5px solid green; */
     background: #fff;
@@ -545,8 +561,8 @@ a:hover{
 
 /* Gallery + Slider */
 .gallery {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 .gallery .container {
     padding-left: 40px;
@@ -827,7 +843,7 @@ a:hover{
 }
 
 .submit-button{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 20px;
 
@@ -837,7 +853,7 @@ a:hover{
 
     display: inline-block;
 
-    padding: 1rem 2.125rem;
+    padding: 16.5px 2.125rem;
 
     cursor: pointer;
     transition: all .4s ease;
