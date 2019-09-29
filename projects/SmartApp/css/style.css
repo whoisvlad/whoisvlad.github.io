@@ -97,7 +97,7 @@ h6 {
     background: #fff;
     padding: 0;
     padding-bottom: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .navbar-toggler {
