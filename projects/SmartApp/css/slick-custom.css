@@ -76,3 +76,8 @@
 .slick-dots .slick-active button {
     background: #5dca88;
 }
+
+
+.slick-slide:focus {
+    outline: none !important;
+}
