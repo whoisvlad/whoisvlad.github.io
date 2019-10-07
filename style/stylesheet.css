@@ -527,6 +527,7 @@ ul{
     font-family: 'MADE Evolve Sans EVO', 'Lato', sans-serif;
     font-size: 56px;
     line-height: 1;
+    text-transform: uppercase;
 }
 .header__logo:hover,
 .header__logo:active,
