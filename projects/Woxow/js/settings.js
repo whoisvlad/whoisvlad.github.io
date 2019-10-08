@@ -19,8 +19,8 @@ $(".slider").slick({
             dots: false,
             arrows: false,
             infinite: false,
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
         } 
     }]
 });
