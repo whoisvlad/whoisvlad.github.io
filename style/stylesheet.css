@@ -8,45 +8,48 @@
 /* @import "http://fonts.fontstorage.com/import/fregat.css"; */
 /* ===== fonts END ===== */
 html,
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Inter UI", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-    font-size: 1rem;
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
     line-height: 1.4;
     /* min-height: 2000px; */
-
     /* min-width: 1200px; */
 
-    background-color: #1b2129;
+    min-height: calc(100vh - 77px);
+    background-color: #131415;
 
     color: #fff;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: 'arial black';
-    letter-spacing: -.12rem;
+    letter-spacing: -0.08rem;
 }
 
-.heading{
+.heading {
+    margin: 0;
     /* font-family: 'Fregat'; */
-    font-size: 50px;
-    line-height: 1.3;
+    font-size: 64px;
+    line-height: 1.2;
     /* font-weight: 300; */
     /* line-height: 1.1; */
 }
 
-*:focus{
+*:focus {
     outline: none;
 }
 
-a{
+a {
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
@@ -54,26 +57,25 @@ a{
     color: #fff;
 }
 
-a:hover{
+a:hover {
     color: tomato;
     background: rgba(0, 0, 0, 0.7);
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.wrapper--global{
+.wrapper--global {
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* max-width: 1200px; */
+    /* margin: auto; */
+    padding: 0 40px;
 }
 
-.visually-hidden:not(:focus):not(:active){
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
 
     overflow: hidden;
@@ -92,19 +94,19 @@ ul{
     clip-path: inset(100%);
 }
 
-*::-moz-selection{
-    /* color: #fff; */
-    color: #1b2129;
-    /* background: #000; */
-    background: yellow;
-}
+/* *::-moz-selection{ */
+/* color: #fff; */
+/* color: #1b2129; */
+/* background: #000; */
+/* background: yellow; */
+/* } */
 
-*::selection{
-    /* color: #fff; */
-    color: #1b2129;
-    /* background: #000; */
-    background: yellow;
-}
+/* *::selection{ */
+/* color: #fff; */
+/* color: #1b2129; */
+/* background: #000; */
+/* background: yellow; */
+/* } */
 
 
 
@@ -125,35 +127,41 @@ ul{
 
 /* Animations */
 @keyframes fadeUp_my {
-    0%{
+    0% {
         opacity: 0;
         z-index: -5;
         pointer-events: none;
     }
-    70%{
+
+    70% {
         opacity: 0;
         z-index: -5;
         pointer-events: none;
     }
-    75%{
+
+    75% {
         pointer-events: none;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
 @keyframes overflowAtimate {
-    0%{
+    0% {
         overflow: hidden;
     }
-    99%{
+
+    99% {
         overflow: hidden;
     }
-    100%{
+
+    100% {
         overflow: visible;
     }
 }
+
 /* Animations END */
 
 
@@ -191,17 +199,14 @@ ul{
 
 
 /* Header */
-.page-header{
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    right: 0;
+.page-header {
     /* box-shadow: inset 0 0 0 2px coral; */
-    padding-top: 30px;
+    padding: 20px 0;
+    margin-bottom: 24px;
 }
 
 .page-header .wrapper--global,
-.header__navigation{
+.header__navigation {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -217,18 +222,18 @@ ul{
     -ms-align-items: center;
     align-items: center;
 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 
-.header__navigation li{
+.header__navigation li {
     margin: 0;
     padding: 0;
-    margin-right: 5px;
+    margin-left: 8px;
 
 }
 
-.header__navigation a{
+.header__navigation a {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
@@ -239,7 +244,7 @@ ul{
     background: transparent;
 }
 
-.header__navigation a::after{
+.header__navigation a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -260,7 +265,7 @@ ul{
 }
 
 .header__navigation a:hover::after,
-.header__navigation a:focus::after{
+.header__navigation a:focus::after {
     animation-name: linkHover;
     animation-duration: 0.6s;
     animation-fill-mode: both;
@@ -269,17 +274,19 @@ ul{
 }
 
 @keyframes fadeOutLink {
-    0%{
+    0% {
         width: 100%;
         height: 100%;
         opacity: 1;
     }
-    99%{
+
+    99% {
         opacity: 0;
         width: 100%;
         height: 100%;
     }
-    100%{
+
+    100% {
         opacity: 0;
         width: 0%;
         height: 1px;
@@ -287,22 +294,25 @@ ul{
 }
 
 @keyframes linkHover {
-    0%{
+    0% {
         width: 0%;
         height: 1px;
         background: tomato;
     }
-    30%{
+
+    30% {
         width: 100%;
         height: 1px;
         background: tomato;
     }
-    100%{
+
+    100% {
         height: 100%;
         width: 100%;
         background: tomato;
     }
 }
+
 /* Header END */
 
 
@@ -346,19 +356,10 @@ ul{
 
 
 /* Index Promo */
-.index-promo{
+.index-promo {
     /* height: 100vh; */
     /* height: calc(100vh - 77px); */
-    min-height: calc(100vh - 77px);
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
     flex-direction: column;
     justify-content: center;
 
@@ -366,18 +367,22 @@ ul{
     /* animation-duration: 2s; */
 }
 
-.promo-content{
+.promo-content {
     margin-bottom: 50px;
     width: 75%;
     min-width: 500px;
-
 }
 
-.heading{
+
+.promo-content img {
+    height: 40px;
+}
+
+.heading {
     animation-delay: 0.5s !important;
 }
 
-.promo-caption{
+.promo-caption {
     font-size: 30px;
     width: 75%;
     min-width: 500px;
@@ -427,12 +432,13 @@ ul{
 
 
 /* My Projects */
-.selected-work{
+.selected-work {
     /* animation-name: fadeUp_my; */
     /* animation-duration: 5s; */
     /* animation-delay: 1s; */
 }
-.my-projects{
+
+.my-projects {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -450,39 +456,40 @@ ul{
     box-sizing: border-box;
 }
 
-.my-projects:last-child{
+.my-projects:last-child {
     margin-bottom: 0;
 }
 
-.projects-wrapper{
+.projects-wrapper {
     /* position: relative; */
 }
 
-.heading--small{
+.heading--small {
     font-size: 24px;
     font-weight: 400;
+    font-family: ;
 
-    animation-name: fadeUp_my;
+    /* animation-name: fadeUp_my; */
     animation-duration: 4s;
 }
 
-.my-projects li{
+.my-projects li {
     padding-right: 20px;
     min-width: 150px;
     box-sizing: border-box;
 }
 
-.my-projects li p{
+.my-projects li p {
     margin: 0;
     padding: 0;
 }
 
-.my-projects li h3{
+.my-projects li h3 {
     margin: 0;
     font-size: 30px;
 }
 
-.project-bg{
+.project-bg {
     width: 100%;
     /* width: 10%; */
     left: 0;
@@ -499,24 +506,23 @@ ul{
     transition: all 0.6s ease;
 }
 
-.my-projects a{
+.my-projects a {
     display: inline-block;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 16px 24px;
+    padding-top: 10px;
     z-index: 5;
 
-    animation-name: fadeUp_my;
+    /* animation-name: fadeUp_my; */
     animation-duration: 5s;
 }
 
-.my-projects a:hover + .project-bg{
+.my-projects a:hover+.project-bg {
     opacity: 1;
     /* width: 100%; */
     /* height: 100vh; */
     /* z-index: 2; */
 }
+
 /* My Projects END */
 
 
@@ -529,6 +535,7 @@ ul{
     line-height: 1;
     text-transform: uppercase;
 }
+
 .header__logo:hover,
 .header__logo:active,
 .header__logo:focus {
