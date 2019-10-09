@@ -91,6 +91,10 @@ body {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
+    box-sizing: border-box;
+
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
 }
 
 .wrapper {
@@ -264,10 +268,11 @@ body {
 
 .overlay .closebtn {
     font-size: 60px;
+    line-height: 0.5;
 
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 0px;
+    right: 17px;
 }
 
 @media screen and (max-height: 450px) {
@@ -603,6 +608,10 @@ body {
 
 /*============================== mission-promo =============================*/
 .mission-promo {
+
+    padding-left: 16px;
+    padding-right: 16px;
+
     position: relative;
 
     display: -webkit-flex;
@@ -983,7 +992,6 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    .section--2 .container--global {}
 
     .section--2 .text-section__container {
         flex-direction: column;
@@ -1122,6 +1130,15 @@ body {
 }
 
 @media screen and (max-width: 660px) {
+    .heading {
+        font-size: 48px;
+    }
+
+    .page-footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .footer__content {
         flex-direction: row;
 
