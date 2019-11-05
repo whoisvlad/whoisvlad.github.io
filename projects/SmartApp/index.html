@@ -1,225 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Smart App iOS</title>
-	<link rel="stylesheet" href="style/normalize.css">
-	<link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart App iOS</title>
+
+    <!-- Fonts -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- Slick-custom -->
+    <link rel="stylesheet" type="text/css" href="css/slick-custom.css"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
+
 <body>
-	<section class="index-promo">
-		<header class="main-header wrapper--global">
-			<a href="#" class="logo">Smallapps</a>
-			<nav>
-				<ul class="page-navigation">
-					<li><a href="#">Home</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#">Screenshot</a></li>
-					<li><a href="#">Gallery</a></li>
-				</ul>
+    <!-- Page NAV -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light d-flex align-items-center">
+        <div class="container d-flex align-items-stretch">
+            <a class="navbar-brand logo" href="#index-promo">Smallapps</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-dark"></span>
+            </button>
 
-				<ul class="contacts">
-					<li class="number">800-123-456</li>
-					<li class="email">smallapps@gmail.com</li>
-				</ul>
-			</nav>
-			<button class="menu-button">Menu</button>
-		</header>
-		<!-- Header END -->
-
-		<section class="promo">
-			<div class="wrapper--global">
-				<h1 class="heading">Perfect app landing page</h1>
-				<span class="sub-heading">Duis bibendum diam</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quae autem, quod quibusdam consectetur accusantium in vero molestiae impedit quia pariatur saepe neque placeat ipsa, non rem quam blanditiis rerum!</p>
-				<a href="#" class="button">Download</a>
-			</div>
-		</section>
-	</section>
-	<!-- First Screen END -->
-	
-
-
+            <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbarsExampleDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product-feature">Product feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product-gesture">Product gesture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page NAV END -->
 
 
-	<!-- Features -->
-	<section class="features" id="features">
-		<div class="wrapper--global">
-			<ul class="features__list">
-				<li class="tablinks defaultOpen" onclick="openTab(event, 'tab-1')"><i class="features__icon far fa-heart"></i><p>Heading title one</p></li>
-				<li class="tablinks" onclick="openTab(event, 'tab-2')"><i class="features__icon fas fa-briefcase"></i><p>Heading title two</p></li>
-				<li class="tablinks" onclick="openTab(event, 'tab-3')"><i class="features__icon fas fa-leaf"></i><p>Heading title tree</p></li>
-				<li class="tablinks" onclick="openTab(event, 'tab-4')"><i class="features__icon fas fa-camera-retro"></i><p>Heading title four</p></li>
-				<li class="tablinks" onclick="openTab(event, 'tab-5')"><i class="features__icon fas fa-umbrella"></i><p>Heading title five</p></li>
-			</ul>
-
-			<ul class="features__content">
-				<li class="tabcontent" id="tab-1">
-					<i class="far fa-heart content__icon"></i>
-					<h2>Heading</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ut commodi perferendis amet, non quaerat provident repellat adipisci harum praesentium, expedita inventore omnis labore architecto unde, itaque dicta. Minus consectetur saepe accusamus dolorem recusandae, dolorum tempora quaerat cupiditate, quam consequatur, dicta eum similique magnam quod nostrum laborum id incidunt ipsa.</p>
-				</li>
-				<li class="tabcontent" id="tab-2">
-					<i class="fas fa-briefcase content__icon"></i>
-					<h2>Heading</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatem quibusdam, facere voluptate nemo magnam odio inventore cum nam aliquam, deleniti ab debitis necessitatibus vitae in consectetur itaque sunt fugiat quia omnis totam assumenda illum veritatis! Nostrum ad repudiandae fugiat, necessitatibus explicabo voluptates accusantium modi saepe voluptatum tempora, minus, dolores?</p>
-				</li>
-				<li class="tabcontent" id="tab-3">
-					<i class="fas fa-leaf content__icon"></i>
-					<h2>Heading</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi accusantium rerum, culpa voluptates animi laborum nobis quis quidem eligendi, maxime impedit autem dolorum. Molestiae blanditiis aut necessitatibus, recusandae hic itaque omnis non cum sunt cumque repellendus quas est. Optio deleniti facere nemo nisi ipsum quia voluptatem deserunt quam ullam sunt.</p>
-				</li>
-				<li class="tabcontent" id="tab-4">
-					<i class="fas fa-camera-retro content__icon"></i>
-					<h2>Heading</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consectetur in quas dolor libero at, quo mollitia voluptate. Ea explicabo in velit eius incidunt, soluta ullam, numquam possimus, vel omnis natus? Esse, quasi hic facilis ea delectus enim quae temporibus, cupiditate aut ducimus dicta, ab cum illum ad repudiandae iusto.</p>
-				</li>
-				<li class="tabcontent" id="tab-5">
-					<i class="fas fa-umbrella content__icon"></i>
-					<h2>Heading</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi corporis eos impedit saepe aliquam tempora officia, aliquid porro consequuntur voluptatum. Expedita qui earum veniam tempora deserunt magnam, saepe aperiam vitae. Pariatur, neque nam in dolorum aliquid officia quas? Voluptate culpa at consequatur vel recusandae laboriosam distinctio ab saepe quia, ducimus.</p>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<!-- Features END -->
-	
-	<!-- Product feature -->
-	<section class="product-feature">
-		<div class="wrapper--global">
-			<div class="product-feature__caption">
-				<h1 class="heading heading--decorated">Onec ultrices ultricies tellus perfect screens here</h1>
-				<span class="sub-heading">Duis bibendum diam non erat facilisis tincidunt.</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error laboriosam omnis, dolore quia quibusdam natus quidem, vero beatae, asperiores nam necessitatibus corporis ex soluta eveniet. Et facere possimus maxime autem?</p>
-
-				<a href="#" class="button">Learn more</a>
-			</div>
-
-			<div class="product-feature__image">
-				<img src="img/iPhone-X.png" alt="Product feature image" height="665">
-			</div>
-		</div>
-	</section>
-	<!-- Product feature END -->
-
-	<!-- Gallery -->
-	<!-- Gallery END -->
-
-	<!-- Product Gesture -->
-	<section class="product-gesture">
-		<div class="wrapper--global">
-			<div class="product-gesture__image">
-				<img src="img/iphone-preview.png" alt="Product gesture illustration" height="665">
-			</div>
-
-			<div class="product-feature__caption">
-				<h1 class="heading heading--decorated">Onec ultrices ultricies tellus perfect screens here</h1>
-				<span class="sub-heading">Duis bibendum diam non erat facilisis tincidunt.</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error laboriosam omnis, dolore quia quibusdam natus quidem, vero beatae, asperiores nam necessitatibus corporis ex soluta eveniet. Et facere possimus maxime autem?</p>
-
-				<a href="#" class="button">Learn more</a>
-			</div>
-		</div>
-	</section>
-	<!-- Product Gesture END -->
-
-	<!-- Testimonials -->
-	<section class="testimonials">
-		<div class="wrapper--global">
-			<h1>What people say about us</h1>
-
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img class="customer-photo" src="img/customer-photo.jpg" alt="Customer Photo">
-					<p class="customer__comment">
-						“ It’s official – I love this app, I couldn’t be without it now. ”
-					</p>
-					<p class="customer-name">- Ron Burgundy</p>
-				</div>
-				<!-- Slide END -->
-
-				<div class="mySlides fade">
-					<img class="customer-photo" src="img/customer-photo-2.jpg" alt="Customer Photo">
-					<p class="customer__comment">
-						“ That is something special, I don't want to use anything else. ”
-					</p>
-					<p class="customer-name">- Travis Kiehn Jr.</p>
-				</div>
-				<!-- Slide END -->
-
-				<div class="mySlides fade">
-					<img class="customer-photo" src="img/customer-photo-3.jpeg" alt="Customer Photo">
-					<p class="customer__comment">
-						“ Just awesome, can't say nothing different from that. ”
-					</p>
-					<p class="customer-name">- Nels Terry</p>
-				</div>
-				<!-- Slide END -->
-
-				<!-- Next and previous buttons -->
-				<a class="prev" onclick="plusSlides(-1)">&#10095;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			
-			<br>
-			<!-- The dots/circles -->
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-			</div>
-		</div>
-	</section>
-	<!-- Testimonials END -->
-
-	<!-- Newsletter -->
-	<section class="newsletter">
-		<div class="wrapper--global">
-			<h1 class="heading"><i class="far fa-envelope heading__icon"></i>Subscribe our Newsletter</h1>
-
-			<form action="" method="post" class="email-form">
-				<label for="">
-					<input type="email" name="email" class="email-field" placeholder="your email address">
-				</label>
-				<button type="submit" class="submit-button">Submit</button>
-			</form>
-		</div>
-	</section>
-
-	<!-- Page Footer -->
-	<footer class="main-footer">
-		<div class="wrapper--global">
-			<h1 class="heading">Say Hi, Get In Touch</h1>
-
-			<ul class="footer-social">
-				<li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
-				<li><a href="#" class="flickr"><i class="fab fa-flickr"></i></a></li>
-				<li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
-			</ul>
-
-			<ul class="footer-page-navigation">
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Press</a></li>
-				<li><a href="#">Support</a></li>
-				<li><a href="#">Developers</a></li>
-				<li><a href="#">Privacy</a></li>
-			</ul>
-		</div>
-	</footer>
-	
+    <!-- Index-PROMO -->
+    <section class="index-promo" id="index-promo">
+        <div class="container">
+            <div class="row">
+                <h1 class="heading col-md-12">Perfect app landing page</h1>
+            </div>
+            <div class="row">
+                <span class="sub-heading col-md-12">Duis bibendum diam</span>
+            </div>
+            <div class="row">
+                <p class="col-md-6 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quae autem, quod quibusdam consectetur accusantium in vero molestiae impedit quia pariatur saepe neque placeat ipsa, non rem quam blanditiis rerum!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="button">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Idex-PROMO END -->
 
 
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/scroll.js"></script>
-	<script type="text/javascript" src="js/tabs.js"></script>
-	<script src="js/slider.js"></script>
-	<script type="text/javascript" src="js/scrollAnimate.js"></script>
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="features__icon far fa-heart"></i><p>Heading title one</p>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ut commodi perferendis amet, non quaerat provident repellat adipisci harum praesentium, expedita inventore omnis labore architecto unde, itaque dicta. Minus consectetur saepe accusamus dolorem recusandae, dolorum tempora quaerat cupiditate, quam consequatur, dicta eum similique magnam quod nostrum laborum id incidunt ipsa.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="features__icon fas fa-briefcase"></i><p>Heading title two</p>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ut commodi perferendis amet, non quaerat provident repellat adipisci harum praesentium, expedita inventore omnis labore architecto unde, itaque dicta. Minus consectetur saepe accusamus dolorem recusandae, dolorum tempora quaerat cupiditate, quam consequatur, dicta eum similique magnam quod nostrum laborum id incidunt ipsa.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="features__icon fas fa-leaf"></i><p>Heading title tree</p>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi accusantium rerum, culpa voluptates animi laborum nobis quis quidem eligendi, maxime impedit autem dolorum. Molestiae blanditiis aut necessitatibus, recusandae hic itaque omnis non cum sunt cumque repellendus quas est. Optio deleniti facere nemo nisi ipsum quia voluptatem deserunt quam ullam sunt.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="features__icon fas fa-camera-retro"></i><p>Heading title four</p>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consectetur in quas dolor libero at, quo mollitia voluptate. Ea explicabo in velit eius incidunt, soluta ullam, numquam possimus, vel omnis natus? Esse, quasi hic facilis ea delectus enim quae temporibus, cupiditate aut ducimus dicta, ab cum illum ad repudiandae iusto.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="features__icon fas fa-umbrella"></i><p>Heading title five</p>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi corporis eos impedit saepe aliquam tempora officia, aliquid porro consequuntur voluptatum. Expedita qui earum veniam tempora deserunt magnam, saepe aperiam vitae. Pariatur, neque nam in dolorum aliquid officia quas? Voluptate culpa at consequatur vel recusandae laboriosam distinctio ab saepe quia, ducimus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features END -->
+
+    <!-- Product feaure -->
+    <section class="product-feature" id="product-feature">
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-between">
+                <div class="product-feature__caption col-md-6 d-flex flex-column justify-content-center align-items-start">
+                    <h1 class="heading heading--decorated">Onec ultrices ultricies tellus perfect screens here</h1>
+                    <span class="sub-heading">Duis bibendum diam non erat facilisis tincidunt.</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error laboriosam omnis, dolore quia quibusdam natus quidem, vero beatae, asperiores nam necessitatibus corporis ex soluta eveniet. Et facere possimus maxime autem?</p>
+    
+                    <a href="#" class="button">Learn more</a>
+                </div>
+    
+                <div class="product-feature__image col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="img/iPhone-X.png" alt="Product feature image" height="665">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product feaure END -->
+
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <ul class="gallery__slider">
+                <li>
+                    <div class="gallery__slide-wrapper">
+                        <img src="img/iPhone-X.png" alt="slide image">
+                        <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="gallery__slide-wrapper">
+                        <img src="img/iphone5.jpg" alt="slide image">
+                        <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="gallery__slide-wrapper">
+                        <img src="img/iphone-cut-w.png" alt="slide image">
+                        <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="gallery__slide-wrapper">
+                        <img src="img/iPhone-X.png" alt="slide image">
+                        <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="gallery__slide-wrapper">
+                        <img src="img/iphone-cut-w.png" alt="slide image">
+                        <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Gallery END -->
+
+
+    <!-- Product gesture -->
+    <section class="product-feature" id="product-gesture">
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-between">
+                <div class="product-feature__image col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="img/iphone-preview.png" alt="Product feature image" height="665">
+                </div>
+
+                <div class="product-feature__caption col-md-6 d-flex flex-column justify-content-center align-items-start">
+                    <h1 class="heading heading--decorated">Onec ultrices ultricies tellus perfect screens here</h1>
+                    <span class="sub-heading">Duis bibendum diam non erat facilisis tincidunt.</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error laboriosam omnis, dolore quia quibusdam natus quidem, vero beatae, asperiores nam necessitatibus corporis ex soluta eveniet. Et facere possimus maxime autem?</p>
+    
+                    <a href="#" class="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product gesture END -->
+    
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <h1>What people say about us</h1>
+
+            <div class="row">
+                <ul class="testimonials__slider col-md-8 mx-auto">
+                    <li>
+                        <div class="testimonials__slide-container">
+                            <img class="customer-photo" src="img/customer-photo.jpg" alt="Customer Photo">
+                            <p class="customer__comment">
+                                “ It’s official – I love this app, I couldn’t be without it now. ”
+                            </p>
+                            <p class="customer-name">- Ron Burgundy</p>
+                        </div>
+                    </li>
+                    <!-- Slide END -->
+
+                    <li>
+                        <div class="testimonials__slide-container">
+                            <img class="customer-photo" src="img/customer-photo-2.jpg" alt="Customer Photo">
+                            <p class="customer__comment">
+                                “ That is something special, I don't want to use anything else. ”
+                            </p>
+                            <p class="customer-name">- Travis Kiehn Jr.</p>
+                        </div>
+                    </li>
+                    <!-- Slide END -->
+
+                    <li>
+                        <div class="testimonials__slide-container">
+                            <img class="customer-photo" src="img/customer-photo-3.jpeg" alt="Customer Photo">
+                            <p class="customer__comment">
+                                “ Just awesome, can't say nothing different from that. ”
+                            </p>
+                            <p class="customer-name">- Nels Terry</p>
+                        </div>
+                    </li>
+                    <!-- Slide END -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials END -->
+
+
+
+
+
+
+
+
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <h1 class="heading"><i class="far fa-envelope heading__icon"></i>Subscribe our Newsletter</h1>
+
+            <div class="row">
+                <form action="" method="post" class="email-form col-md-8 mx-auto">
+                    <label for="">
+                        <input type="email" name="email" class="email-field" placeholder="your email address">
+                    </label>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter END -->
+
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <h1 class="heading col-md-8 mx-auto">Say Hi, Get In Touch</h1>
+
+                <ul class="footer-social col-md-8 mx-auto">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#" class="flickr"><i class="fab fa-flickr"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+    
+                <ul class="footer-page-navigation col-md-8 mx-auto">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <!-- font icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Smooth scroll -->
+    <script src="js/smooth-scroll.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick-settings.js"></script>
 </body>
+
 </html>
