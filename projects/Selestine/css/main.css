@@ -1,0 +1,11 @@
+/* Temporal styles */
+body {
+    background: darkgrey;
+}
+
+header,
+section,
+footer {
+    padding: 15px 35px;
+    margin-bottom: 15px;
+}
