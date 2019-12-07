@@ -1,3 +1,23 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap');
+/* font-family: 'DM Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+/* font-family: 'DM Serif Text', serif; */
+
+/* @font-face {
+    font-family: 'Tuesday Night';
+    src: url(../fonts/TuesdayNight-Regular.otf) format(opentype);
+} */
+/* FONTS end */
+
+
+
+
+
+
+
+
 /* Temporal styles */
 body {
     /* background: darkgrey; */
@@ -5,8 +25,6 @@ body {
     font-size: 24px;
 }
 
-
-/* font-family: 'DM Sans', sans-serif; */
 
 
 /* STYLES */
@@ -141,11 +159,12 @@ ul {
     display: block;
     /* box-shadow: inset 0 0 0 2px red; */
     object-fit: contain;
+    margin-bottom: 80px;
 }
 
 /* main nav */
 header nav {
-    background: red;
+    /* background: red; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -161,7 +180,7 @@ header nav {
 }
 
 .main-nav__item a {
-    font-size: 16px;
+    font-size: 12px;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 32px;
@@ -169,6 +188,28 @@ header nav {
     text-decoration: none;
     color: #000;
     font-family: 'DM Sans', sans-serif;
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+
+.main-nav__item a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0.01%;
+    background: transparent;
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+}
+
+.main-nav__item a:hover {
+    color: #fff;
+}
+.main-nav__item a:hover::before {
+    background: #000;
+    width: 100%;
 }
 
 /* MAIN HEADER - END */
