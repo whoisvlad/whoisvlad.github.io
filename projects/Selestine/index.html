@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- <link rel="stylesheet" href="css/my-outline.css"> -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper-custom.css">
 
     <!-- <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet"> -->
 </head>
@@ -96,11 +98,78 @@
 
     <!-- MAIN -->
     <main>
+        <!-- HERO - slider -->
+        <section class="hero">
+            <div class="wrapper">
+                <div class="slider-wrapper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-image__container">
+                                    <img src="img/hero-slider/hero-slide-1.jpg" alt="">
+                                </div>
+
+                                <div class="slide-card post-card">
+                                    <p class="card-info">
+                                        <a href="#" class="post-category">Fashion</a>
+                                        <time datetime="2019-08-19">August 18, 2019</time>
+                                    </p>
+                
+                                    <h2 class="post-heading"><a href="#">15 Mother’s Day Gift Ideas For Every Budget</a></h2>
+
+                                    <a href="#" class="read-more">Continue reading</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-image__container">
+                                    <img src="img/hero-slider/hero-slide-2.jpg" alt="">
+                                </div>
+
+                                <div class="slide-card post-card">
+                                    <p class="card-info">
+                                        <a href="#" class="post-category">Fashion</a>
+                                        <time datetime="2019-08-19">August 18, 2019</time>
+                                    </p>
+                
+                                    <h2 class="post-heading"><a href="#">Freshen Up Your Work Wardrobe With These Classic Pieces</a></h2>
+
+                                    <a href="#" class="read-more">Continue reading</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-image__container">
+                                    <img src="img/hero-slider/hero-slide-3.jpg" alt="">
+                                </div>
+
+                                <div class="slide-card post-card">
+                                    <p class="card-info">
+                                        <a href="#" class="post-category">Fashion</a>
+                                        <time datetime="2019-08-19">August 18, 2019</time>
+                                    </p>
+                
+                                    <h2 class="post-heading"><a href="#">Daily Style Diaries: NYC Summer Style</a></h2>
+
+                                    <a href="#" class="read-more">Continue reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <!-- HERO - slider - END -->
+
+
+
         <!-- POSTS -->
         <section class="posts wrapper">
             <!-- image 550 width, 700 height -->
             <article class="blog-post">
-                <div class="post-image-container">
+                <div class="blog-post__image-container">
                     <img src="img/blogpost images/post-1.jpg" alt="Blogpost image">
                 </div>
                 
@@ -115,7 +184,7 @@
             </article>
 
             <article class="blog-post">
-                <div class="post-image-container">
+                <div class="blog-post__image-container">
                     <img src="img/blogpost images/post-2.jpg" alt="Blogpost image">
                 </div>
                 
@@ -131,7 +200,7 @@
             </article>
 
             <article class="blog-post">
-                <div class="post-image-container">
+                <div class="blog-post__image-container">
                     <img src="img/blogpost images/post-3.jpg" alt="Blogpost image">
                 </div>
                 
@@ -146,7 +215,7 @@
             </article>
 
             <article class="blog-post">
-                <div class="post-image-container">
+                <div class="blog-post__image-container">
                     <img src="img/blogpost images/post-4.jpg" alt="Blogpost image">
                 </div>
                 
@@ -171,7 +240,117 @@
             </div>
         </section>
         <!-- FEATURED VIDEOS - END -->
+
+
+
+        <!-- FEATTURED POST -->
+        <section class="featured-post wrapper">
+            <!-- image size 1170x600 -->
+            <article>
+                <div class="featured-post__image-container">
+                    <img src="img/featured-post.jpg" alt="">
+                </div>
+
+                <div class="featured-post-card">
+                    <p class="card-info">
+                        <a href="#" class="post-category">Books</a>
+                        <time datetime="2019-08-19" class="post-time"><span>August 18, 2019</span></time>
+                    </p>
+
+                    <h2 class="post-heading"><a href="#">15 Books Everyone Should Read At Least Once</a></h2>
+                </div>
+            </article>
+        </section>
+        <!-- FEATTURED POST - END -->
     </main>
     <!-- MAIN - end -->
+
+
+
+    <!-- MAIN FOOTER -->
+    <footer class="main-footer">
+        <div class="wrapper">
+            <ul class="footer__social">
+                <li>
+                    <a class="twitter" href="#" title="Twitter">
+                        Twitter
+                        <svg width="50" height="41" viewBox="0 0 50 41">
+                            <path d="M49.8372 5.06517C48.0262 5.87017 46.0772 6.41317 44.0322 6.65617C46.1202 5.40617 47.7212 3.42617 48.4762 1.06417C46.5232 2.22317 44.3612 3.06417 42.0582 3.51817C40.2152 1.55417 37.5882 0.326172 34.6812 0.326172C29.1002 0.326172 24.5752 4.85117 24.5752 10.4332C24.5752 11.2242 24.6642 11.9952 24.8372 12.7362C16.4372 12.3142 8.98922 8.29117 4.00422 2.17617C3.13422 3.66817 2.63622 5.40417 2.63622 7.25817C2.63622 10.7642 4.42022 13.8582 7.13222 15.6702C5.47622 15.6172 3.91722 15.1622 2.55422 14.4052C2.55322 14.4472 2.55322 14.4902 2.55322 14.5332C2.55322 19.4292 6.03722 23.5132 10.6612 24.4432C9.81322 24.6732 8.92022 24.7972 7.99822 24.7972C7.34622 24.7972 6.71322 24.7342 6.09622 24.6152C7.38322 28.6302 11.1152 31.5532 15.5372 31.6342C12.0782 34.3452 7.72122 35.9612 2.98522 35.9612C2.17022 35.9612 1.36522 35.9132 0.574219 35.8192C5.04822 38.6882 10.3602 40.3602 16.0672 40.3602C34.6582 40.3602 44.8232 24.9602 44.8232 11.6042C44.8232 11.1662 44.8142 10.7292 44.7952 10.2952C46.7692 8.87317 48.4832 7.09217 49.8372 5.06517Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="instagram" href="#" title="Instagram">
+                        Instagram
+                        <svg width="50" height="51" viewBox="0 0 50 51">
+                            <path d="M25.1999 12.6997C18.1999 12.6997 12.3999 18.3997 12.3999 25.4997C12.3999 32.5997 18.0999 38.2997 25.1999 38.2997C32.2999 38.2997 37.9999 32.4997 37.9999 25.4997C37.9999 18.4997 32.1999 12.6997 25.1999 12.6997ZM25.1999 33.6997C20.6999 33.6997 16.9999 29.9997 16.9999 25.4997C16.9999 20.9997 20.6999 17.2997 25.1999 17.2997C29.6999 17.2997 33.3999 20.9997 33.3999 25.4997C33.3999 29.9997 29.6999 33.6997 25.1999 33.6997Z"/>
+                            <path d="M38.5001 15.3C40.1017 15.3 41.4001 14.0016 41.4001 12.4C41.4001 10.7984 40.1017 9.5 38.5001 9.5C36.8985 9.5 35.6001 10.7984 35.6001 12.4C35.6001 14.0016 36.8985 15.3 38.5001 15.3Z"/>
+                            <path d="M45.9999 4.8998C43.3999 2.1998 39.6999 0.799805 35.4999 0.799805H14.8999C6.1999 0.799805 0.399902 6.5998 0.399902 15.2998V35.7998C0.399902 40.0998 1.7999 43.7998 4.5999 46.4998C7.2999 49.0998 10.8999 50.3998 14.9999 50.3998H35.3999C39.6999 50.3998 43.2999 48.9998 45.8999 46.4998C48.5999 43.8998 49.9999 40.1998 49.9999 35.8998V15.2998C49.9999 11.0998 48.5999 7.4998 45.9999 4.8998ZM45.5999 35.8998C45.5999 38.9998 44.4999 41.4998 42.6999 43.1998C40.8999 44.8998 38.3999 45.7998 35.3999 45.7998H14.9999C11.9999 45.7998 9.4999 44.8998 7.6999 43.1998C5.8999 41.3998 4.9999 38.8998 4.9999 35.7998V15.2998C4.9999 12.2998 5.8999 9.7998 7.6999 7.9998C9.3999 6.2998 11.9999 5.3998 14.9999 5.3998H35.5999C38.5999 5.3998 41.0999 6.2998 42.8999 8.0998C44.5999 9.89981 45.5999 12.3998 45.5999 15.2998V35.8998Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="pinterest" href="#" title="Pinterest">
+                        Pinterest
+                        <svg width="40" height="51" viewBox="0 0 40 51">
+                            <path d="M21.374 0.62207C7.78801 0.62207 0.937012 10.3621 0.937012 18.4861C0.937012 23.4041 2.79901 27.7791 6.79201 29.4081C7.44701 29.6781 8.03401 29.4181 8.22401 28.6931C8.35601 28.1931 8.66901 26.9271 8.80801 26.3981C8.99901 25.6811 8.92501 25.4311 8.39601 24.8041C7.24501 23.4471 6.50801 21.6891 6.50801 19.1971C6.50801 11.9711 11.915 5.50207 20.587 5.50207C28.266 5.50207 32.485 10.1941 32.485 16.4591C32.485 24.7051 28.836 31.6641 23.42 31.6641C20.428 31.6641 18.19 29.1911 18.906 26.1561C19.765 22.5331 21.43 18.6251 21.43 16.0081C21.43 13.6681 20.173 11.7161 17.574 11.7161C14.516 11.7161 12.059 14.8801 12.059 19.1171C12.059 21.8161 12.971 23.6421 12.971 23.6421C12.971 23.6421 9.84201 36.9021 9.29301 39.2241C8.20101 43.8491 9.12901 49.5171 9.20801 50.0891C9.25401 50.4291 9.69001 50.5111 9.88801 50.2551C10.169 49.8861 13.813 45.3901 15.05 40.8961C15.401 39.6251 17.061 33.0371 17.061 33.0371C18.055 34.9331 20.959 36.5991 24.047 36.5991C33.238 36.5991 39.475 28.2201 39.475 17.0041C39.476 8.52107 32.292 0.62207 21.374 0.62207Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="bloglovin" href="#" title="Bloglovin">
+                        Bloglovin
+                        <svg width="57" height="49" viewBox="0 0 57 49">
+                            <path d="M56.7149 15.7902C56.7149 7.42671 49.9134 0.646973 41.5222 0.646973C35.9948 0.646973 31.1583 3.58963 28.5004 7.98854C25.8425 3.58963 21.0052 0.646973 15.4778 0.646973C7.08661 0.646973 0.285156 7.42671 0.285156 15.7902C0.285156 20.142 2.1303 24.0628 5.0798 26.8249H5.07578L26.8266 47.5703C27.2256 48.048 27.824 48.3525 28.4948 48.3525C29.1161 48.3525 29.6756 48.0899 30.0713 47.6704L51.9275 26.8249H51.921C54.8709 24.0632 56.7149 20.1424 56.7149 15.7902Z"/>
+                        </svg>                            
+                    </a>
+                </li>
+                <li>
+                    <a class="facebook" href="#" title="Facebook">
+                        Facebook
+                        <svg width="22" height="47" viewBox="0 0 22 47">
+                            <path d="M21.5096 15.7066H14.2278V10.9307C14.2278 9.13719 15.4165 8.71905 16.2537 8.71905C17.0891 8.71905 21.3925 8.71905 21.3925 8.71905V0.834263L14.3154 0.806641C6.45919 0.806641 4.67135 6.68737 4.67135 10.4507V15.7066H0.12793V23.8314H4.67135C4.67135 34.2584 4.67135 46.8218 4.67135 46.8218H14.2278C14.2278 46.8218 14.2278 34.1346 14.2278 23.8314H20.6762L21.5096 15.7066Z"/>
+                        </svg>                            
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer__copyright">
+                &copy; 2019 Selestine Magazine
+                <br>
+                All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <!-- MAIN FOOTER - END -->
+
+
+    <!-- SCRIPTS -->
+    <!-- swiper -->
+    <script src="js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var heroSwiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            loop: true,
+            simulateTouch: false,
+            autoplay: {
+                delay: 4000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            fadeEffect: {
+                crossFade: true,
+            },
+        });
+    </script>
+    <!-- swiper - end -->
+    <!-- SCRIPTS - END -->
 </body>
 </html>
