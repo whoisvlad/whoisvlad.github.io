@@ -845,6 +845,196 @@ header nav {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Most popular */
+.popular {
+    padding-top: 50px;
+    /* padding-bottom: 130px; */
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+
+
+.popular__posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    transform: translateY(85px);
+}
+
+.popular__posts article {
+    /* background: rgba(150, 0, 0, 0.3); */
+    /* padding-bottom: 105px; */
+    position: relative;
+    /* margin-right: 2%; */
+}
+
+.image-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 370px;
+}
+.image-wrapper img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.post-size__1x2 {
+    width: 66%;
+}
+
+.post-size__1x1 {
+    width: 32%;
+}
+
+.popular__post__card {
+    /* position: absolute; */
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    background: #fff;
+    width: calc(100% - 50px);
+    right: 0;
+    box-sizing: border-box;
+    transform: translateY(-70px);
+    padding: 35px;
+    padding-bottom: 25px;
+}
+
+.popular__post__card .card-info {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.popular__post__card .post-heading {
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.popular__insagram {
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+    background: rgba(150, 150, 0, 0.3);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    transform: translateY(50%);
+}
+
+.popular__insagram li {
+    background: #999999;
+    width: 20%;
+    padding-bottom: 20%;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular__insagram li img {
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* Most popular - end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAIN - end */
 
 
