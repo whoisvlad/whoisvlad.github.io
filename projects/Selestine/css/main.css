@@ -452,8 +452,8 @@ header nav {
     padding-bottom: 60px;
     padding-left: 60px;
     padding-right: 5px;
-    /* bottom: -150px; */
-    top: 80%;
+    bottom: -150px;
+    /* top: 80%; */
     right: 0;
 }
 
@@ -571,9 +571,8 @@ header nav {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    height: 140px;
+    min-height: 140px;
     margin-bottom: 30px;
-    background: yellow;
 }
 
 .videos .relevant-videos li:last-child {
@@ -590,7 +589,7 @@ header nav {
 .videos .post-poster {
     width: 36%;
     /* height: 100%; */
-    background: orange;
+    height: 140px;
     overflow: hidden;
     position: relative;
 }
@@ -824,6 +823,7 @@ header nav {
     margin-bottom: 40px;
     font-size: 48px;
     font-family: 'DM Serif Text', serif;
+    font-weight: normal;
 }
 
 .carousel-post__poster {
@@ -1158,3 +1158,37 @@ header nav {
     line-height: 2;
 }
 /* main footer - end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: rgba(150, 150, 0, 0.3);
+}
+
+.test .firstHref {
+    background: grey;
+    display: block;
+    padding: 50px;
+}
