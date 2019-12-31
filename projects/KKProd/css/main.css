@@ -38,7 +38,8 @@
 body {
     background: #141414;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Cera Pro', Helvetica, sans-serif;
     padding-left: 128px;
     padding-top: 40px;
     padding-bottom: 40px;
