@@ -1,152 +1,51 @@
-/* FONTS */
-/* regular */
-@font-face {
-    font-family: 'Cera Pro';
-    /* src: url('CeraPro-Regular.eot'); */
-    src: url('../fonts/cera-pro/regular/CeraPro-Regular.eot');
-    src: url('../fonts/cera-pro/regular/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/cera-pro/regular/CeraPro-Regular.woff') format('woff'),
-    url('../fonts/cera-pro/regular/CeraPro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "variables";
+@import "typefaces";
 
-/* medium */
-@font-face {
-    font-family: 'Cera Pro Medium';
-    src: url('../fonts/cera-pro/medium/CeraPro-Medium.eot');
-    src: url('../fonts/cera-pro/medium/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/cera-pro/medium/CeraPro-Medium.woff') format('woff'),
-    url('../fonts/cera-pro/medium/CeraPro-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* bold */
-@font-face {
-    font-family: 'Cera Pro';
-    src: url('../fonts/cera-pro/bold/CeraPro-Bold.eot');
-    src: url('../fonts/cera-pro/bold/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/cera-pro/bold/CeraPro-Bold.woff') format('woff'),
-    url('../fonts/cera-pro/bold/CeraPro-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
+@import "button";
+@import "pageupper";
+@import "main-nav";
+@import "side-nav";
+@import "content";
+@import "hero";
+@import "footer";
 
 
 body {
-    background: #141414;
-    color: #fff;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Cera Pro', Helvetica, sans-serif;
-    padding-left: 128px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
     position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Side nav */
-
-svg {
-    transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
-}
-
-.side-nav {
-    /* background: rgba(255, 255, 255, 0.01); */
-    /* background: #141414; */
-    background: transparent;
-    position: fixed;
-    left: 0;
-    top: 0;
-    /* bottom: 0; */
-    height: 100%;
-    /* max-height: 1080px; */
-
-    width: 88px;
-    /* width: 6.875vw; */
-    /* min-width: 88px; */
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.side-nav .menu-button {
-    /* background: rgba(0, 0, 0, 0.2); */
-    background: transparent;
-    margin-top: 30px;
-    padding: 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid grey;
-    border: none;
-    cursor: pointer;
-}
-
-.side-nav .menu-button svg {
-    stroke: rgba(255, 255, 255, 0.8);
-}
-
-.side-nav .menu-button:hover svg {
-    stroke: rgba(255, 255, 255, 1);
-}
-
-.side-nav__social {
-    margin: 0;
     padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background: rgba(250, 250, 250, 0.3); */
+    padding-left: 96px;
+    margin: 0;
+    line-height: 1.3;
+    font-size: 22px;
+    letter-spacing: -.4px;
+    background: $bg-lvl-0;
+    font-family: 'Cera Pro', sans-serif;
+    // display: flex;
 }
 
-.side-nav__social li {
-    /* background: rgba(0, 150, 0, 0.3); */
-    margin-bottom: 32px;
-    margin-top: 8px;
+a {
+    color: rgba($white, 1);
+    text-decoration: none;
+    transition: all 160ms ease;
+
+    &:hover {
+        color: rgba($white, .8);
+    }
 }
 
-.side-nav__social a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-
+.container {
+    // padding: 0 40px;
+    position: relative;
+    // z-index: 1;
 }
 
-.side-nav svg {
-    fill: rgba(255, 255, 255, 0.8);
+
+
+
+//
+// Assistants (showcase purpoces only)
+
+.col-8-12 {
+    width: 72%;
 }
 
-.side-nav a:hover svg {
-    fill: rgba(255, 255, 255, 1);
-}
-
-/* Side nav end */

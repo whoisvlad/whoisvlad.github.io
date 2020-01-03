@@ -15,7 +15,8 @@ function browserSync(done) {
         server: {
             baseDir: "./app",
         },
-        port: 3000,
+        // port: 3000,
+        port: 5000,
         stream:true,
         notify: false
     });
