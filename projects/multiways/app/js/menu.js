@@ -6,12 +6,14 @@ let menuBg = document.querySelector('.open-bg');
 // Open/Close full menu
 menuBtn.addEventListener('click', function () {
     mainNav.classList.toggle('main-nav--open');
+    menuBtn.classList.toggle('open');
 })
 
 
 // Close full menu if click transparent part
 menuBg.addEventListener('click', function () {
     mainNav.classList.remove('main-nav--open');
+    menuBtn.classList.remove('open');
 })
 
 // Close full menu with ESC-button
@@ -19,6 +21,7 @@ window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
         if (mainNav.classList.contains("main-nav--open")) {
             mainNav.classList.remove("main-nav--open");
+            menuBtn.classList.remove('open');
         }
     }
 })

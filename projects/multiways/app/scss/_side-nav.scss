@@ -19,6 +19,8 @@
         padding: 10px;
         z-index: 501;
 
+        // background: rgba($color: firebrick, $alpha: 0.5);
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,6 +40,9 @@
         &:hover svg {
             // transform: scale(1.08);
             stroke: rgba(255, 255, 255, 1);
+        }
+        &:hover span {
+            background: rgba(255, 255, 255, 1);
         }
     }
 

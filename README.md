@@ -1,2 +1,0 @@
-# whoisvlad.github.io
-Portfolio
