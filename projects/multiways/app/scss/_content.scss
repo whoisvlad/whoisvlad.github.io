@@ -2,8 +2,9 @@
     background: $white;
     border-radius: 24px 0px 0px 24px;
     margin-top: -24px;
-    padding: 8px 40px 40px;
+    padding: 8px 40px 0;
     color: rgba($default-content, .8);
+    overflow: hidden;
 
     a {
         ///// V1
