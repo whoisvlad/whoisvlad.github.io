@@ -15,19 +15,28 @@
 
     .menu-btn {
         background: transparent;
-        margin-top: 28px;
-        padding: 10px;
+        // margin-top: 23px;
+        padding: 16px;
+        // padding-left: 16px;
+        // padding-right: 16px;
+        // padding-top: 8.5px;
+        // padding-bottom: 8.5px;
+        // padding: 1px;
+        width: 32px;
+        height: 17px;
         z-index: 501;
+        display: block;
 
         // background: rgba($color: firebrick, $alpha: 0.5);
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         // border: 1px solid grey;
         border: none;
         outline: 0;
         cursor: pointer;
+        overflow: hidden;
     }
 
     .menu-btn {

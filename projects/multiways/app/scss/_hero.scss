@@ -5,6 +5,29 @@
     display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
+    z-index: 1;
+    // position: relative;
+    position: sticky;
+    position: -webkit-sticky;
+    
+    &__dummy-shadow {
+        transition: all 0.2s, height 0s;
+        position: absolute;
+        z-index: -1;
+        // filter: blur(25px);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // height: 100%;
+        opacity: 0;
+        // opacity: 0.5;
+        height: 1px;
+        // transform: translateY(85%);
+        // background: rgba(0, 0, 0, 0.829);
+        background: rgba(0, 0, 0, 0);
+        // box-shadow: 0px -30px 40px 40px rgba(0,0,0,0.829);
+        // box-shadow: 0px -250px 40px 40px rgba(0,0,0,0.92);
+    }
 
     h1 {
         margin: 0;
@@ -40,11 +63,21 @@
 
     .meta-share{
         // width: 360px;
+
+        a {
+            border: 1px solid rgba($white, 0);
+
+            &:hover {
+                border: 1px solid rgba($white, 0.6);
+            }
+        }
     }
     // После доработки социалок справа
     // перенести внутрь meta-tags 👆 
     li {
-        display: inline-block;
+        display: flex;
+        // display: inline-block;
+        align-items: center;
         font-size: 16px;
         letter-spacing: -.2px;
         margin-right: 8px;
@@ -53,17 +86,64 @@
             margin-right: 0;
         }
 
+        .icon {
+            padding: 18px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                position: absolute;
+                transform: translateX(-2px);
+                // left: 50%;
+                // transform: translateX(-50%);
+                
+            }
+        }
+
+        &:nth-of-type(1) svg {
+            margin-right: 7px;
+        }
+        &:nth-of-type(2) svg {
+            transform: translateX(0px);
+        }
+        &:nth-of-type(3) svg {
+            transform: translateX(-1px);
+        }
+        &:last-of-type svg {
+            transform: translateX(-1px);
+        }
+
         a {
-            display: inline-block;
+            // display: inline-block;
             color: rgba($white, .8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: none;
+            font-size: 16px;
+            font-weight: normal;
             border-radius: 40px;
             border: 1px solid rgba($white, .56);
             padding: 8px 16px 10px;
             transition: all 240ms ease;
             margin-bottom: 8px;
+            &.btn {
+                color: $black;
+            }
+            &.btn:hover {
+                color: $black;
+            }
+
+            svg {
+                height: 19px;
+                width: 19px;
+                fill: $black;
+            }
 
             &:hover {
-                // color: rgba($white, 1);
+                color: rgba($white, 1);
                 background: rgba($white, .04);
                 border-color: rgba($white, .8);
             }

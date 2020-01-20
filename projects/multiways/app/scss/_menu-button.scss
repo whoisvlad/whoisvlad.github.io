@@ -1,57 +1,80 @@
-#nav-icon4 {
-    width: 60px;
-    height: 45px;
+#menu-btn {
+    width: 32px;
+    // height: 17px;
+    height: 32px;
+    box-sizing: border-box;
     position: relative;
-    margin: 36px auto;
+    margin: 31px auto;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
-    transform: scale(0.8);
+    border-radius: 2px;
+    // transform: scale(0.8);
 }
 
-#nav-icon4 span {
+#menu-btn span {
     display: block;
     position: absolute;
-    height: 2px;
+    height: 1px;
     width: 100%;
+    // width: calc(100% + 15px);
     // background: #d3531a;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 9px;
+    // border-radius: 9px;
     opacity: 1;
-    left: 0;
+    // left: 0;
     transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    transition: 320ms ease-in-out;
+}
+
+#menu-btn:hover span {
+    background: rgba(255, 255, 255, 1);
 }
 
 
-#nav-icon4 span:nth-child(1) {
-    top: 0px;
+#menu-btn span:nth-child(1) {
+    // top: 0px;
+    top: calc(25% - 1px);
+    right: 0;
+    transform-origin: right top;
+    width: calc(100% + 40px);
+}
+
+#menu-btn span:nth-child(2) {
+    left: 0;
+    // top: 8px;
+    top: calc(50% - 1px);
     transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(2) {
-    top: 18px;
-    transform-origin: left center;
+#menu-btn span:nth-child(3) {
+    // top: 16px;
+    // bottom: 0;
+    // top: calc(100% - 1px);
+    bottom: calc(25% - 1px);
+    right: 0;
+    transform-origin: right bottom;
+    width: calc(100% + 40px);
 }
 
-#nav-icon4 span:nth-child(3) {
-    top: 36px;
-    transform-origin: left center;
+#menu-btn.menu-btn--open span:nth-child(1) {
+    // transform: rotate(-27deg);
+    transform: rotate(-45deg);
+    top: -1px;
+    // top: -1px;
+    // right: 15px;
 }
 
-#nav-icon4.open span:nth-child(1) {
-    transform: rotate(45deg);
-    top: -3px;
-    left: 8px;
-}
-
-#nav-icon4.open span:nth-child(2) {
+#menu-btn.menu-btn--open span:nth-child(2) {
     width: 0%;
     opacity: 0;
 }
 
-#nav-icon4.open span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 39px;
-    left: 8px;
+#menu-btn.menu-btn--open span:nth-child(3) {
+    // transform: rotate(27deg);
+    transform: rotate(45deg);
+    bottom: -1px;
+    // top: 39px;
+    // top: 17px;
+    // right: 8px;
 }

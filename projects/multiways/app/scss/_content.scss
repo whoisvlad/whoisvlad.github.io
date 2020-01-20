@@ -5,6 +5,8 @@
     padding: 8px 40px 0;
     color: rgba($default-content, .8);
     overflow: hidden;
+    position: relative;
+    z-index: 5;
 
     a {
         ///// V1
